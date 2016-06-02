@@ -1,6 +1,6 @@
 @font-face{
     font-family: Roboto;
-    src: url("../fonts/roboto/Roboto-Regular.ttf")
+    src: url("materialize/fonts/roboto/Roboto-Regular.ttf")
 }
 html{
     font-family: Roboto !important;
@@ -20,10 +20,9 @@ p{
     height: 100px;
 }
 .parallax-container {
-    height: 600px;
+    height: 700px;
 }
 .banner{
-    z-index: 99;
     width: 100%;
     height: auto;
     padding-top: 20px;
@@ -37,7 +36,8 @@ p{
 }
 
 .container{
-    width: 1170px;
+    /*width: 1170px;*/
+    width: 80%;
     margin: 0 auto;
     padding: 0 15px;
     
@@ -69,6 +69,19 @@ p{
 .header-top-right{
     display: inline-block;
     float: right;
+}
+@media only screen and (max-width: 720px){
+    .header-top-left{
+        float: none !important;
+        margin: 20px 0;
+        display: block !important;
+    }
+    .header-top-right{
+        float: none !important;
+    }
+    .header-top-right div{
+        display: block !important;
+    }
 }
 .header-top-right div{
     padding: 10px 10px;
@@ -118,6 +131,22 @@ p{
     display: inline-block;
     position: relative;
 }
+@media only screen and (max-width: 720px){
+    .logo {
+        display: block;
+    }
+    .logo h1{
+        font-size: 78px;
+    }
+    .header-bot-right{
+        margin: 0 auto!important;
+        display:inline-block!important;
+        float:none;
+    }
+    .header-bot-right div:not(.form-hover){
+        display: block !important;
+    }
+}
 .header-bot-right a{
     padding: 10px 15px;
     font-size: 18px;
@@ -138,7 +167,18 @@ p{
 .card-hover:hover img{
     transform: scale(1.2);
 }
-
+@media only screen and (max-width: 960px){ 
+    .card-hover .card-title{
+        line-height: 24px !important;
+        font-size: 18px;
+    }
+    .btn{
+        font-size: 12px;
+        line-height: 24px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
 .banner-box{
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.09);
     overflow: hidden;
@@ -188,6 +228,7 @@ p{
     border-radius: 0;
     color: #555;
     box-shadow: 0px 0px 0px 0px;
+    display: block;
 }
 .btn:hover{
     background-color: #555;
@@ -207,8 +248,14 @@ p{
     color: #000;
     margin-bottom: 30px;
 }
+
 .Mid-content p{
     font-size: 1.1em;
+}
+@media only screen and (max-width: 1200px){
+    .Mid-content h2{
+        font-size: 1.5em;
+    }   
 }
 
 .Album{
@@ -254,6 +301,13 @@ p{
     opacity: 0;
     z-index: 3;
 }
+@media only screen and (max-width: 720px){
+    .Album h4{
+        font-size: 10px;
+        top: 30%;
+        left: 25%;
+    }
+}
 .Album-lb {
     margin: 0 auto;
     text-align: center;
@@ -277,7 +331,8 @@ p{
     margin-bottom: 80px;
 }
 .Footer{
-    margin: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 .Footer h3{
     font-size: 58px;
@@ -287,6 +342,11 @@ p{
 .Newsletter{
     text-align: center;
     margin: 30px 0;
+}
+@media only screen and (max-width: 360px){
+    .Footer h3{
+        font-size: 1.5em;
+    }
 }
 .SubGroup{
     width: 50%;
@@ -320,6 +380,24 @@ p{
     color: #fff !important;
     background-color: #000 !important;
 }
+
+@media only screen and (max-width: 1200px){
+    .SubGroup {
+        width: 80% !important;
+    }
+
+}
+
+@media only screen and (max-width: 720px){
+    .SubGroup {
+        width: 90% !important;
+    }
+    .SubGroup input{
+        display: block !important;
+        margin: 10px auto !important;
+        width: 70% !important;
+    }  
+}
 .Footer-bot{
     margin: 50px 0;
 }
@@ -331,6 +409,11 @@ p{
 .Footer-menu{
     float: left;
     display: inline-block;
+}
+@media only screen and (max-width: 800px){
+    .Footer-menu li{
+        display: block !important;
+    }
 }
 .Footer-menu ul{
     list-style: none;
@@ -368,6 +451,12 @@ p{
     transition: color 0.7s;
     color: #F9D9BE;
 }
+@media only screen and (max-width: 800px){
+    .social li{
+        display: block;
+    }
+}
+
 .copyright{
     margin: 80px auto 0px auto;
     text-align: center;
@@ -377,6 +466,7 @@ p{
 }
 
 .form-hover{
+    z-index: 10;
     background-color: #fff;
     position:absolute !important;
     top: 120%;
@@ -386,6 +476,20 @@ p{
     text-align: left;
     display: none !important;
 }
+@media only screen and (max-width: 720px){
+    .form-hover{
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        display: none !important;
+    }
+    .show-form:active .form-hover, .show-form:visited .form-hover, .show-form:hover .form-hover{
+        position: relative !important;
+        opacity: 1;
+        transition: opacity 1s !important;
+    }
+}
+
 .li-hd{
     font-size: 16px;
     font-weight: 100;
