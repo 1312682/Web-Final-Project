@@ -96,6 +96,7 @@ p{
 } 
 
 .logo{
+    font-family: Roboto !important;
     display: inline-block;
     float: left;
 }
@@ -277,7 +278,7 @@ p{
     margin-bottom: 80px;
 }
 .Footer{
-    margin: 80px 0;
+    margin-top: 80px;
 }
 .Footer h3{
     font-size: 58px;
@@ -299,7 +300,7 @@ p{
     outline: none !important;
     color: #B4B2B2 !important;
     font-size: 1em !important;
-    background: none !important;
+    background: #fff !important;
     border: 1px solid #555 !important;
     height: auto !important;
     font-size: 18px !important;
@@ -369,7 +370,7 @@ p{
     color: #F9D9BE;
 }
 .copyright{
-    margin: 80px auto 0px auto;
+    margin: 50px auto 20px auto;
     text-align: center;
 }
 .copyright a{
@@ -395,6 +396,7 @@ p{
 
 .form-hover a{
     color: #555;
+    opacity: 1 !important;
     line-height: 40px;
     margin: 10px 0;
     font-size: 14px;
@@ -418,6 +420,3 @@ p{
     color: #555;
     background-color: #F9D9BE;
 }
-
-
-
