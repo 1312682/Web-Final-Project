@@ -3,7 +3,7 @@
     src: url("../fonts/roboto/Roboto-Regular.ttf")
 }
 html{
-    font-family: Roboto !important;
+    font-family: 'PT Sans Narrow', sans-serif !important;
 }
 a{
     color: white;
@@ -12,8 +12,22 @@ a:hover{
     text-decoration: none;
 }
 p{
+    font-family: 'PT Sans Narrow', sans-serif !important;
     color: #999;
     font-size: 16px;
+}
+
+p1{
+    font-family: 'PT Sans Narrow', sans-serif !important;
+    font-size: 16px;
+    color: #999;
+}
+
+h4{
+    font-family: 'PT Sans Narrow', sans-serif !important;
+    font-size: 30px;
+    font-weight: 200;
+    color: inherit;
 }
 .ads {
     width: 100%;
@@ -418,6 +432,3 @@ p{
     color: #555;
     background-color: #F9D9BE;
 }
-
-
-

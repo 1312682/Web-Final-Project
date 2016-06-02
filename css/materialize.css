@@ -2769,54 +2769,57 @@ video.responsive-video {
   height: auto;
 }
 
+.pagination{
+  margin-left: 35%;
+}
 .pagination li {
-  display: inline-block;
-  font-size: 1.2rem;
-  padding: 0 10px;
-  line-height: 30px;
-  border-radius: 2px;
-  text-align: center;
+  display: inline-block !important;
+  font-size: 15px !important;
+  padding: 0 10px !important;
+  line-height: 30px !important;
+  border-radius: 2px !important;
+  text-align: center !important;
 }
 
 .pagination li a {
-  color: #444;
+  color: #444 !important;
 }
 
 .pagination li.active a {
-  color: #fff;
+  color: #fff !important;
 }
 
 .pagination li.active {
-  background-color: #ee6e73;
+  background-color: rgb(249, 217, 190) !important;
 }
 
 .pagination li.disabled a {
-  cursor: default;
-  color: #999;
+  cursor: default !important;
+  color: #999 !important;
 }
 
 .pagination li i {
-  font-size: 2.2rem;
-  vertical-align: middle;
+  font-size: 2.2rem !important;
+  vertical-align: middle !important;
 }
 
 .pagination li.pages ul li {
-  display: inline-block;
-  float: none;
+  display: inline-block !important;
+  float: none !important;
 }
 
 @media only screen and (max-width: 992px) {
   .pagination {
-    width: 100%;
+    width: 100% !important;
   }
   .pagination li.prev,
   .pagination li.next {
-    width: 10%;
+    width: 10% !important;
   }
   .pagination li.pages {
     width: 80%;
-    overflow: hidden;
-    white-space: nowrap;
+    overflow: hidden !important;
+    white-space: nowrap !important;
   }
 }
 
@@ -3512,8 +3515,9 @@ input[type=range] + .thumb {
 }
 
 .row .col.s4 {
-  width: 33.3333333333%;
-  margin-left: auto;
+  width: 32%;
+  margin-left: 10px;
+  margin-bottom: 5%;
   left: auto;
   right: auto;
 }
@@ -4262,35 +4266,35 @@ nav .input-field label.active {
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: 'PT Sans Narrow', sans-serif !important;
   src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
   src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 200;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: 'PT Sans Narrow', sans-serif !important;
   src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
   src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: 'PT Sans Narrow', sans-serif !important;
   src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
   src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: 'PT Sans Narrow', sans-serif !important;
   src: url("../fonts/roboto/Roboto-Medium.eot");
   src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: 'PT Sans Narrow', sans-serif !important;
   src: url("../fonts/roboto/Roboto-Bold.eot");
   src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
@@ -4646,7 +4650,7 @@ small {
 }
 
 .card .card-reveal {
-  padding: 20px;
+  padding: 10px;
   position: absolute;
   background-color: #fff;
   width: 100%;
@@ -4848,7 +4852,7 @@ small {
   border: none;
   border-radius: 2px;
   display: inline-block;
-  height: 36px;
+  height: 30px;
   line-height: 36px;
   outline: 0;
   padding: 0 2rem;
@@ -5119,7 +5123,7 @@ button.btn-floating {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  margin-top: -10px;
+  margin-top: 10;
   margin-left: -10px;
   opacity: 0;
   background: rgba(0, 0, 0, 0.2);
