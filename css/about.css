@@ -64,7 +64,6 @@ h4{
 .empty-cart{
     float:right;
 }
-
 .flow-text{
     background-color: #F9D9BE;
     cursor: pointer;
@@ -497,100 +496,32 @@ a:focus {
   border-radius: 10px;
 }*/
 
-span.badge {
-  min-width: 3rem !important; 
-  font-weight: normal !important;
-  padding: 0 6px !important;
-  text-align: center !important;
-  font-size: 1rem !important;
-  line-height: inherit !important;
-  color: #757575 !important;
-  background-color: #F9D9BE !important;
-  position: absolute !important;
-  right: 15px !important;
-  box-sizing: border-box !important
+.container-nav{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 0 15px;
+    text-align: center;
+    
 }
 
-.row .col.s4 {  
-     width: 32% !important;   
-     margin-left: 10px !important;  
-     margin-bottom: 5% !important;   
-     left: auto !important;  
-     right: auto !important; 
+.btn-floating{
+    background-color: #F9D9BE;
+    width: 72px !important;
+    height: 72px !important;
 }
 
-
-.pagination{
-  margin-left: 35% !important;
-}
-.pagination li {
-  display: inline-block !important;
-  font-size: 15px !important;
-  padding: 0 10px !important;
-  line-height: 30px !important;
-  border-radius: 2px !important;
-  text-align: center !important;
+.btn-floating:hover {
+  background-color: #F9D9BE;
 }
 
-.pagination li a {
-  color: #444 !important;
-}
-
-.pagination > li > a,
-.pagination > li > span {
-  /*position: relative;*/
-  float: none !important;
-  padding: none !important;
-  text-decoration: none;
-  background-color: #fff;
-  border: 1px !important;
-}
-
-.pagination li.active a {
-  color: #fff !important;
-  border: none !important;
-  background-color: transparent !important;
-}
-
-.pagination li.active {
-  background-color: rgb(249, 217, 190) !important;
-  border-color: none !important;
-}
-
-.pagination li.disabled a {
-  cursor: default !important;
-  color: #999 !important;
-}
-
-.pagination li i {
-  font-size: 2.2rem !important;
-  vertical-align: middle !important;
-}
-
-.pagination li.pages ul li {
-  display: inline-block !important;
-  float: none !important;
-  border-color: white !important;
+.btn-floating .fa{
+    font-size: 36px !important;
+    margin-top: 12%;
 }
 
 
-@media only screen and (max-width: 992px) {
-  .pagination {
-    width: 100% !important;
-    border-color: white !important;
-  }
-  .pagination li.prev, !important
-  .pagination li.next {
-    width: 10% !important;
-    border-color: white !important;
-  }
-  .pagination li.pages {
-    width: 80%;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-  }
-}
-
-.breadcrumb {
-  background-color: transparent !important;
-}
+/*.fa{
+    font-size: 36px !important;
+    margin-top: 10%;
+}*/
