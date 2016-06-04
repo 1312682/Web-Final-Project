@@ -1,9 +1,9 @@
-@font-face{
-    font-family: Roboto;
-    src: url("materialize/fonts/roboto/Roboto-Regular.ttf")
-}
 html{
-    font-family: Roboto !important;
+    font-family: PT Sans Narrow, sans-serif !important;
+}
+
+body {
+    font-family: PT Sans Narrow, sans-serif !important;    
 }
 a{
     color: white;
