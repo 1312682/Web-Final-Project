@@ -5,10 +5,6 @@ h1 {
     margin-bottom: 5px;
 }
 
-.parallax-container {
-    height: 450px !important;
-}
-
 .section {
     font-family: PT Sans Narrow, sans-serif !important;
 }
@@ -51,9 +47,44 @@ h1 {
     font-size: 15px !important;
     line-height: 22.5px !important;
     height: 46px !important;
-    width: 379.641px !important;
+    width: 300px !important;
 }
 
+.addtc {
+    width: 300px !important;
+    background-color: #4db6ac;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .s5{
+        display: inline-table !important;
+        width:95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float:none !important;
+        text-align: center !important;
+    }
+    .labelId {
+        text-align: center !important;
+    }
+    .col-margin {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float:none !important;
+    }
+    .size{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none!important;
+    }
+    .select-wrapper {
+        width: 95% !important;
+    }
+    .addtc{
+        width: 95% !important;
+    }
+}
 .caret {
     height: 15px !important;
     line-height: 15px !important;
@@ -78,12 +109,6 @@ ul.select-dropdown li {
     font-size: 12px !important;
     height: 18px !important;
     line-height: 18px !important;
-}
-
-.addtc {
-    width: 379.641px !important;
-    background-color: #4db6ac;
-    font-size: 20px;
 }
 
 .addtc:hover {
