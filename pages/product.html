@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{}}</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fontawesome-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/product.css">
+</head>
+
+<body ng-app="app" ng-controller="ProductController as vm">
+    <script src="../js/angular.min.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/product.module.js"></script>
+    <script src="../js/product.controller.js"></script>
+
+    <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/jquery.elevatezoom.js"></script>
+
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="../images/cover.jpg"></div>
+        <div class="banner">
+            <div class="container">
+                <div class="header-top">
+                    <div class="header-top-left">
+                        <a class="flow-text" href="">Cart:$0.00 (0 items) <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:18px;"></i></a>
+                        <a class="empty-cart" href="">Empty Cart</a>
+                    </div>
+                    <div class="header-top-right">
+                        <div>
+                            <a href="">VNĐ</a>
+                        </div>
+                        <div class="mid">
+                            <a href=""><i class="fa fa-user" aria-hidden="true"></i> My Account</a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="logo">
+                        <a href="">
+                            <h1><b style="color:#F9D9BE">B</b>OLYBI</h1>
+                        </a>
+                    </div>
+                    <div class="header-bot-right">
+                        <div class="show-form">
+                            <a class="show-men" href="">MENS</a>
+                            <div class="form-hover">
+                                <ul>
+                                    <li class="li-hd">MEN</li>
+                                    <li><a>Running</a></li>
+                                    <li><a>Casual</a></li>
+                                    <li><a>Gym</a></li>
+                                    <li><a>Basketball</a></li>
+                                    <li><a>Soccer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="show-form">
+                            <a class="show-women" href="">WOMENS</a>
+                            <div class="form-hover">
+                                <ul>
+                                    <li class="li-hd">WOMEN</li>
+                                    <li><a>Running</a></li>
+                                    <li><a>Casual</a></li>
+                                    <li><a>Gym</a></li>
+                                    <li><a>Basketball</a></li>
+                                    <li><a>Soccer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="show-form">
+                            <a class="show-acessories" href="">ACESSORIES</a>
+                            <div class="form-hover">
+                                <ul>
+                                    <li class="li-hd">ACESORIES</li>
+                                    <li><a>Running</a></li>
+                                    <li><a>Casual</a></li>
+                                    <li><a>Gym</a></li>
+                                    <li><a>Basketball</a></li>
+                                    <li><a>Soccer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="show-form">
+                            <a href="" class="sale">SALE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section white">
+        <div class="row container">
+            <div class="col s7 col-margin">
+                <div class="row">
+                    <img class="materialboxed responsive-img" data-caption="Lorem ipsum dolor sit amet." width="600" height="480" src="http://lorempixel.com/600/480/sports/{{vm.number}}">
+                </div>
+                <div class="row">
+                    <div class="col s2 margin">
+                        <a href="">
+                            <img class="responsive-img" src="http://lorempixel.com/100/100/sports/1" ng-click="vm.applyChange(1)">
+                        </a>
+                    </div>
+                    <div class="col s2">
+                        <a href="">
+                            <img class="responsive-img" src="http://lorempixel.com/100/100/sports/2" ng-click="vm.applyChange(2)">
+                        </a>
+                    </div>
+                    <div class="col s2">
+                        <a href="">
+                        <img class="responsive-img" src="http://lorempixel.com/100/100/sports/3" ng-click="vm.applyChange(3)">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s5">
+                <h1>Product</h1>
+                <div class="labelId">Id:...</div>
+                <div class="castItem">Price:...</div>
+
+                <div class="input-field col s7 size">
+                    <select>
+                        <option value="" disabled selected>Choose your size</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Size</label>
+                </div>
+                <div class="input-field col s7 size">
+                    <select>
+                        <option value="" disabled selected>1</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Quantity</label>
+                </div>
+
+                <div class="col s7 size">
+                    <a class="waves-effect waves-light btn-large btn-flat addtc">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Bot-Mid-content">
+        <div class="related">
+            <h1>Related Product</h1>
+        </div>
+        <ul class="Album">
+            <li>
+                <div>
+                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
+                    <div class="Overlay">
+                    </div>
+                    <h4>Roshe Run</h4>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
+                    <div class="Overlay">
+                    </div>
+                    <h4>Roshe Run</h4>
+                </div>
+            </li>
+            <li>
+                <a href="#image1">
+                    <div>
+                        <img class="responsive-img" src="../images/ws005.jpg" />
+                        <div class="Overlay">
+                        </div>
+                        <h4>Roshe Run</h4>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#image1">
+                    <div>
+                        <img class="responsive-img" src="../images/ws005.jpg" />
+                        <div class="Overlay">
+                        </div>
+                        <h4>Roshe Run</h4>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div>
+                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
+                    <div class="Overlay">
+                    </div>
+                    <h4>Roshe Run</h4>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
+                    <div class="Overlay">
+                    </div>
+                    <h4>Roshe Run</h4>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
+                    <div class="Overlay">
+                    </div>
+                    <h4>Roshe Run</h4>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
+                    <div class="Overlay">
+                    </div>
+                    <h4>Roshe Run</h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="Footer">
+        <div class="container">
+            <div class="Newsletter">
+                <h3>Newsletter</h3>
+                <div class="SubGroup">
+                    <input type="text" class="tbSub">
+                    <input type="submit" class="btSub" value="Subscribe">
+                </div>
+            </div>
+            <div class="Footer-bot">
+                <div class="Footer-menu">
+                    <ul>
+                        <li>
+                            <a href="">PRIVACY</a>
+                        </li>
+                        <li>
+                            <a href="">TERMS</a>
+                        </li>
+                        <li>
+                            <a href="">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2015 Watches. All Rights Reserved | Design by <a href="http://team-vant.tk">NVT</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+    </script>
+</body>
+
+</html>

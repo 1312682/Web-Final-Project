@@ -25,6 +25,10 @@ h1 {
     cursor: pointer;
 }
 
+.col.s2 a:focus img {
+    border: 3px solid #333 !important;
+}
+
 .labelId {
     font-size: 15px;
     color: #8C8C8C;
