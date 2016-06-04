@@ -11,7 +11,25 @@
                     "Brand": "Adidas",
                     "Color": "Black",
                     "Price": "3500000",
-                    "Url": "../images/ms001.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ms001_1.jpg"
+                        },
+                        {
+                            "Url":"images/ms001_2.jpg"
+                        },
+                        {
+                            "Url":"images/ms001_3.jpg"
+                        },
+                        {
+                            "Url":"images/ms001_4.jpg"
+                        },
+                        {
+                            "Url":"images/ms001_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ms001.html",
                     "Size":
                     [
                         {
@@ -48,7 +66,25 @@
                     "Brand": "Adidas",
                     "Color": "Black",
                     "Price": "7000000",
-                    "Url": "../images/ms002.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ms002_1.jpg"
+                        },
+                        {
+                            "Url":"images/ms002_2.jpg"
+                        },
+                        {
+                            "Url":"images/ms002_3.jpg"
+                        },
+                        {
+                            "Url":"images/ms002_4.jpg"
+                        },
+                        {
+                            "Url":"images/ms002_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ms002.html",
                     "Size":
                     [
                         {
@@ -85,7 +121,25 @@
                     "Brand": "Adidas",
                     "Color": "Black",
                     "Price": "7000000",
-                    "Url": "../images/ms003.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ms003_1.jpg"
+                        },
+                        {
+                            "Url":"images/ms003_2.jpg"
+                        },
+                        {
+                            "Url":"images/ms003_3.jpg"
+                        },
+                        {
+                            "Url":"images/ms003_4.jpg"
+                        },
+                        {
+                            "Url":"images/ms003_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ms003.html",
                     "Size":
                     [
                         {
@@ -122,7 +176,25 @@
                     "Brand": "Nike",
                     "Color": "White",
                     "Price": "5500000",
-                    "Url": "../images/ms004.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ms004_1.jpg"
+                        },
+                        {
+                            "Url":"images/ms004_2.jpg"
+                        },
+                        {
+                            "Url":"images/ms004_3.jpg"
+                        },
+                        {
+                            "Url":"images/ms004_4.jpg"
+                        },
+                        {
+                            "Url":"images/ms004_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ms004.html",
                     "Size":
                     [
                         {
@@ -159,7 +231,25 @@
                     "Brand": "Adidas",
                     "Color": "Silver",
                     "Price": "2000000",
-                    "Url": "../images/ms005.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ms005_1.jpg"
+                        },
+                        {
+                            "Url":"images/ms005_2.jpg"
+                        },
+                        {
+                            "Url":"images/ms005_3.jpg"
+                        },
+                        {
+                            "Url":"images/ms005_4.jpg"
+                        },
+                        {
+                            "Url":"images/ms005_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ms005.html",
                     "Size":
                     [
                         {
@@ -199,7 +289,25 @@
                     "Brand": "Adidas",
                     "Color": "Colorful",
                     "Price": "3200000",
-                    "Url": "../images/ws001.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ws001_1.jpg"
+                        },
+                        {
+                            "Url":"images/ws001_2.jpg"
+                        },
+                        {
+                            "Url":"images/ws001_3.jpg"
+                        },
+                        {
+                            "Url":"images/ws001_4.jpg"
+                        },
+                        {
+                            "Url":"images/ws001_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ws001.html",
                     "Size":
                     [
                         {
@@ -236,7 +344,25 @@
                     "Brand": "Adidas",
                     "Color": "White",
                     "Price": "2990000",
-                    "Url": "../images/ws002.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ws002_1.jpg"
+                        },
+                        {
+                            "Url":"images/ws002_2.jpg"
+                        },
+                        {
+                            "Url":"images/ws002_3.jpg"
+                        },
+                        {
+                            "Url":"images/ws002_4.jpg"
+                        },
+                        {
+                            "Url":"images/ws002_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ws002.html",
                     "Size":
                     [
                         {
@@ -273,7 +399,25 @@
                     "Brand": "Nike",
                     "Color": "Colorful",
                     "Price": "4550000",
-                    "Url": "../images/ws003.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ws003_1.jpg"
+                        },
+                        {
+                            "Url":"images/ws003_2.jpg"
+                        },
+                        {
+                            "Url":"images/ws003_3.jpg"
+                        },
+                        {
+                            "Url":"images/ws003_4.jpg"
+                        },
+                        {
+                            "Url":"images/ws003_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ws003.html",
                     "Size":
                     [
                         {
@@ -310,7 +454,25 @@
                     "Brand": "Nike",
                     "Color": "Colorful",
                     "Price": "5200000",
-                    "Url": "../images/ws004.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ws004_1.jpg"
+                        },
+                        {
+                            "Url":"images/ws004_2.jpg"
+                        },
+                        {
+                            "Url":"images/ws004_3.jpg"
+                        },
+                        {
+                            "Url":"images/ws004_4.jpg"
+                        },
+                        {
+                            "Url":"images/ws004_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ws004.html",
                     "Size":
                     [
                         {
@@ -347,7 +509,25 @@
                     "Brand": "Adidas",
                     "Color": "Green",
                     "Price": "2450000",
-                    "Url": "../images/ws005.jpg",
+                    "Img":
+                    [
+                        {
+                            "Url":"images/ws005_1.jpg"
+                        },
+                        {
+                            "Url":"images/ws005_2.jpg"
+                        },
+                        {
+                            "Url":"images/ws005_3.jpg"
+                        },
+                        {
+                            "Url":"images/ws005_4.jpg"
+                        },
+                        {
+                            "Url":"images/ws005_5.jpg"
+                        }
+                    ],
+                    "Url": "pages/item/ws005.html",
                     "Size":
                     [
                         {
@@ -379,7 +559,25 @@
     [
         {
             "ID": "A001",
-            "Url": "..images/a001.jpg",
+            "Img":
+            [
+                {
+                    "Url":"images/a001_1.jpg"
+                },
+                {
+                    "Url":"images/a001_2.jpg"
+                },
+                {
+                    "Url":"images/a001_3.jpg"
+                },
+                {
+                    "Url":"images/a001_4.jpg"
+                },
+                {
+                    "Url":"images/a001_5.jpg"
+                }
+            ],
+            "Url": "pages/item/a001.html",
             "Name": "Adidas socks",
             "Brand": "Adidas",
             "Color": "White and Grey",
@@ -388,7 +586,25 @@
         },
         {
             "ID": "A002",
-            "Url": "..images/a002.jpg",
+            "Img":
+            [
+                {
+                    "Url":"images/a002_1.jpg"
+                },
+                {
+                    "Url":"images/a002_2.jpg"
+                },
+                {
+                    "Url":"images/a002_3.jpg"
+                },
+                {
+                    "Url":"images/a002_4.jpg"
+                },
+                {
+                    "Url":"images/a002_5.jpg"
+                }
+            ],
+            "Url": "pages/item/a002.html",
             "Name": "Jordan socks",
             "Brand": "Nike",
             "Color": "White and Grey",
