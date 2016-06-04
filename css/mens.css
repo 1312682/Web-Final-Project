@@ -64,6 +64,7 @@ h4{
 .empty-cart{
     float:right;
 }
+
 .flow-text{
     background-color: #F9D9BE;
     cursor: pointer;
@@ -466,8 +467,8 @@ textarea {
   line-height: inherit;
 }
 a{
-    color: white !important;
-    background-color: transparent !important;
+    color: white;
+    /*background-color: transparent !important;*/
 }
 a:hover{
     text-decoration: none;
@@ -547,8 +548,8 @@ span.badge {
 
 .pagination li.active a {
   color: #fff !important;
-    border: none !important;
-
+  border: none !important;
+  background-color: transparent !important;
 }
 
 .pagination li.active {
