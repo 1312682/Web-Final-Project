@@ -3502,7 +3502,7 @@ tbody.collapse.in {
        -o-transition-property: height, visibility;
           transition-property: height, visibility;
 }
-.caret {
+.caret:not(span) {
   display: inline-block;
   width: 0;
   height: 0;

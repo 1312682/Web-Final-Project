@@ -578,7 +578,7 @@ span.badge {
     width: 100% !important;
     border-color: white !important;
   }
-  .pagination li.prev, !important
+  .pagination li.prev,
   .pagination li.next {
     width: 10% !important;
     border-color: white !important;
