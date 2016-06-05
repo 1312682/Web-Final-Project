@@ -1,425 +1,377 @@
 {
-    "Men":
-    [
-        {
-            "Type": "Running",
-            "Item":
-            [
-                {
-                    "ID": "MS001",
-                    "Name": "Ultraboost",
-                    "Brand": "Adidas",
-                    "Color": "Black",
-                    "Price": "3500000",
-                    "Img":
-                    [
-                        {
-                            "Url":"images/ms001_1.jpg"
-                        },
-                        {
-                            "Url":"images/ms001_2.jpg"
-                        },
-                        {
-                            "Url":"images/ms001_3.jpg"
-                        },
-                        {
-                            "Url":"images/ms001_4.jpg"
-                        },
-                        {
-                            "Url":"images/ms001_5.jpg"
-                        }
-                    ],
-                    "Url": "pages/item/ms001.html",
-                    "Size":
-                    [
-                        {
-                            "Size": "40",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "41",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "42",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "43",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "44",
-                            "Qtt": "10"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "Type": "Casual",
-            "Item":
-            [
-                {
-                    "ID": "MS002",
-                    "Name": "Y-3",
-                    "Brand": "Adidas",
-                    "Color": "Black",
-                    "Price": "7000000",
-                    "Img":
-                    [
-                        {
-                            "Url":"images/ms002_1.jpg"
-                        },
-                        {
-                            "Url":"images/ms002_2.jpg"
-                        },
-                        {
-                            "Url":"images/ms002_3.jpg"
-                        },
-                        {
-                            "Url":"images/ms002_4.jpg"
-                        },
-                        {
-                            "Url":"images/ms002_5.jpg"
-                        }
-                    ],
-                    "Url": "pages/item/ms002.html",
-                    "Size":
-                    [
-                        {
-                            "Size": "40",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "41",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "42",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "43",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "44",
-                            "Qtt": "10"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "Type": "Gym",
-            "Item":
-            [
-                {
-                    "ID": "MS003",
-                    "Name": "Duramo",
-                    "Brand": "Adidas",
-                    "Color": "Black",
-                    "Price": "7000000",
-                    "Img":
-                    [
-                        {
-                            "Url":"images/ms003_1.jpg"
-                        },
-                        {
-                            "Url":"images/ms003_2.jpg"
-                        },
-                        {
-                            "Url":"images/ms003_3.jpg"
-                        },
-                        {
-                            "Url":"images/ms003_4.jpg"
-                        },
-                        {
-                            "Url":"images/ms003_5.jpg"
-                        }
-                    ],
-                    "Url": "pages/item/ms003.html",
-                    "Size":
-                    [
-                        {
-                            "Size": "40",
-                            "Qtt": "0"
-                        },
-                        {
-                            "Size": "41",
-                            "Qtt": "1"
-                        },
-                        {
-                            "Size": "42",
-                            "Qtt": "2"
-                        },
-                        {
-                            "Size": "43",
-                            "Qtt": "3"
-                        },
-                        {
-                            "Size": "44",
-                            "Qtt": "0"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "Type": "Basketball",
-            "Item":
-            [
-                {
-                    "ID": "MS004",
-                    "Name": "Lebron 11",
-                    "Brand": "Nike",
-                    "Color": "White",
-                    "Price": "5500000",
-                    "Img":
-                    [
-                        {
-                            "Url":"images/ms004_1.jpg"
-                        },
-                        {
-                            "Url":"images/ms004_2.jpg"
-                        },
-                        {
-                            "Url":"images/ms004_3.jpg"
-                        },
-                        {
-                            "Url":"images/ms004_4.jpg"
-                        },
-                        {
-                            "Url":"images/ms004_5.jpg"
-                        }
-                    ],
-                    "Url": "pages/item/ms004.html",
-                    "Size":
-                    [
-                        {
-                            "Size": "40",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "41",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "42",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "43",
-                            "Qtt": "10"
-                        },
-                        {
-                            "Size": "44",
-                            "Qtt": "10"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "Type": "Soccer",
-            "Item":
-            [
-                {
-                    "ID": "MS005",
-                    "Name": "X 16.3 FIRM GROUND BOOTS",
-                    "Brand": "Adidas",
-                    "Color": "Silver",
-                    "Price": "2000000",
-                    "Img":
-                    [
-                        {
-                            "Url":"images/ms005_1.jpg"
-                        },
-                        {
-                            "Url":"images/ms005_2.jpg"
-                        },
-                        {
-                            "Url":"images/ms005_3.jpg"
-                        },
-                        {
-                            "Url":"images/ms005_4.jpg"
-                        },
-                        {
-                            "Url":"images/ms005_5.jpg"
-                        }
-                    ],
-                    "Url": "pages/item/ms005.html",
-                    "Size":
-                    [
-                        {
-                            "Size": "40",
-                            "Qtt": "1"
-                        },
-                        {
-                            "Size": "41",
-                            "Qtt": "1"
-                        },
-                        {
-                            "Size": "42",
-                            "Qtt": "1"
-                        },
-                        {
-                            "Size": "43",
-                            "Qtt": "0"
-                        },
-                        {
-                            "Size": "44",
-                            "Qtt": "1"
-                        }
-                    ]
-                }
-            ]
-        }
-    ],
-    "Women":
-    [
-        {
-            "Type": "Running",
-            "Item":
-            [
-                {
-                    "ID": "WS001",
-                    "Name": "Ultraboost",
-                    "Brand": "Adidas",
-                    "Color": "Colorful",
-                    "Price": "3200000",
-                    "Img":
-                    [
-                        {
-                            "Url":"images/ws001_1.jpg"
-                        },
-                        {
-                            "Url":"images/ws001_2.jpg"
-                        },
-                        {
-                            "Url":"images/ws001_3.jpg"
-                        },
-                        {
-                            "Url":"images/ws001_4.jpg"
-                        },
-                        {
-                            "Url":"images/ws001_5.jpg"
-                        }
-                    ],
-                    "Url": "pages/item/ws001.html",
-                    "Size":
-                    [
-                        {
-                            "Size": "36",
-                            "Qtt": "1"
-                        },
-                        {
-                            "Size": "37",
-                            "Qtt": "1"
-                        },
-                        {
-                            "Size": "38",
-                            "Qtt": "1"
-                        },
-                        {
-                            "Size": "39",
-                            "Qtt": "2"
-                        },
-                        {
-                            "Size": "40",
-                            "Qtt": "1"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "Type": "Casual",
-            "Item":
-            [
-                {
-                    "ID": "WS002",
-                    "Name": "NMD",
-                    "Brand": "Adidas",
-                    "Color": "White",
-                    "Price": "2990000",
-                    "Img":
-                    [
-                        {
-                            "Url":"images/ws002_1.jpg"
-                        },
-                        {
-                            "Url":"images/ws002_2.jpg"
-                        },
-                        {
-                            "Url":"images/ws002_3.jpg"
-                        },
-                        {
-                            "Url":"images/ws002_4.jpg"
-                        },
-                        {
-                            "Url":"images/ws002_5.jpg"
-                        }
-                    ],
-                    "Url": "pages/item/ws002.html",
-                    "Size":
-                    [
-                        {
-                            "Size": "36",
-                            "Qtt": "0"
-                        },
-                        {
-                            "Size": "37",
-                            "Qtt": "0"
-                        },
-                        {
-                            "Size": "38",
-                            "Qtt": "1"
-                        },
-                        {
-                            "Size": "39",
-                            "Qtt": "0"
-                        },
-                        {
-                            "Size": "40",
-                            "Qtt": "1"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "Type": "Gym",
-            "Item":
-            [
-                {
+"Items":{
+    "Men": {
+        "Running": [
+            {
+                "ID": "MS001",
+                "Name": "Ultraboost",
+                "Brand": "Adidas",
+                "Color": "Black",
+                "Price": "3500000",
+                "Img": [
+                    {
+                        "Url": "../images/ms001_1.jpg"
+                    },
+                    {
+                        "Url": "../images/ms001_2.jpg"
+                    },
+                    {
+                        "Url": "../images/ms001_3.jpg"
+                    },
+                    {
+                        "Url": "../images/ms001_4.jpg"
+                    },
+                    {
+                        "Url": "../images/ms001_5.jpg"
+                    }
+                ],
+                "Url": "pages/item/ms001.html",
+                "Size": [
+                    {
+                        "Size": "40",
+                        "Qtt": "0"
+                    },
+                    {
+                        "Size": "41",
+                        "Qtt": "12"
+                    },
+                    {
+                        "Size": "42",
+                        "Qtt": "14"
+                    },
+                    {
+                        "Size": "43",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "44",
+                        "Qtt": "10"
+                    }
+                ]
+            }
+        ],
+        "Casual": [
+            {
+                "ID": "MS002",
+                "Name": "Y-3",
+                "Brand": "Adidas",
+                "Color": "Black",
+                "Price": "7000000",
+                "Img": [
+                    {
+                        "Url": "../images/ms002_1.jpg"
+                    },
+                    {
+                        "Url": "../images/ms002_2.jpg"
+                    },
+                    {
+                        "Url": "../images/ms002_3.jpg"
+                    },
+                    {
+                        "Url": "../images/ms002_4.jpg"
+                    },
+                    {
+                        "Url": "../images/ms002_5.jpg"
+                    }
+                ],
+                "Url": "pages/item/ms002.html",
+                "Size": [
+                    {
+                        "Size": "40",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "41",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "42",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "43",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "44",
+                        "Qtt": "10"
+                    }
+                ]
+            }
+        ],
+        "Gym": [
+            {
+                "ID": "MS003",
+                "Name": "Duramo",
+                "Brand": "Adidas",
+                "Color": "Black",
+                "Price": "7000000",
+                "Img": [
+                    {
+                        "Url": "../images/ms003_1.jpg"
+                    },
+                    {
+                        "Url": "../images/ms003_2.jpg"
+                    },
+                    {
+                        "Url": "../images/ms003_3.jpg"
+                    },
+                    {
+                        "Url": "../images/ms003_4.jpg"
+                    },
+                    {
+                        "Url": "../images/ms003_5.jpg"
+                    }
+                ],
+                "Url": "pages/item/ms003.html",
+                "Size": [
+                    {
+                        "Size": "40",
+                        "Qtt": "0"
+                    },
+                    {
+                        "Size": "41",
+                        "Qtt": "1"
+                    },
+                    {
+                        "Size": "42",
+                        "Qtt": "2"
+                    },
+                    {
+                        "Size": "43",
+                        "Qtt": "3"
+                    },
+                    {
+                        "Size": "44",
+                        "Qtt": "0"
+                    }
+                ]
+            }
+        ],
+        "Basketball": [
+            {
+                "ID": "MS004",
+                "Name": "Lebron 11",
+                "Brand": "Nike",
+                "Color": "White",
+                "Price": "5500000",
+                "Img": [
+                    {
+                        "Url": "../images/ms004_1.jpg"
+                    },
+                    {
+                        "Url": "../images/ms004_2.jpg"
+                    },
+                    {
+                        "Url": "../images/ms004_3.jpg"
+                    },
+                    {
+                        "Url": "../images/ms004_4.jpg"
+                    },
+                    {
+                        "Url": "../images/ms004_5.jpg"
+                    }
+                ],
+                "Url": "pages/item/ms004.html",
+                "Size": [
+                    {
+                        "Size": "40",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "41",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "42",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "43",
+                        "Qtt": "10"
+                    },
+                    {
+                        "Size": "44",
+                        "Qtt": "10"
+                    }
+                ]
+            }
+        ],
+        "Soccer": [
+            {
+                "ID": "MS005",
+                "Name": "X 16.3 FIRM GROUND BOOTS",
+                "Brand": "Adidas",
+                "Color": "Silver",
+                "Price": "2000000",
+                "Img": [
+                    {
+                        "Url": "../images/ms005_1.jpg"
+                    },
+                    {
+                        "Url": "../images/ms005_2.jpg"
+                    },
+                    {
+                        "Url": "../images/ms005_3.jpg"
+                    },
+                    {
+                        "Url": "../images/ms005_4.jpg"
+                    },
+                    {
+                        "Url": "../images/ms005_5.jpg"
+                    }
+                ],
+                "Url": "pages/item/ms005.html",
+                "Size": [
+                    {
+                        "Size": "40",
+                        "Qtt": "1"
+                    },
+                    {
+                        "Size": "41",
+                        "Qtt": "1"
+                    },
+                    {
+                        "Size": "42",
+                        "Qtt": "1"
+                    },
+                    {
+                        "Size": "43",
+                        "Qtt": "0"
+                    },
+                    {
+                        "Size": "44",
+                        "Qtt": "1"
+                    }
+                ]
+            }
+        ]
+    },
+    "Women": {
+        "Running": [
+            {
+                "ID": "WS001",
+                "Name": "Ultraboost",
+                "Brand": "Adidas",
+                "Color": "Colorful",
+                "Price": "3200000",
+                "Img": [
+                    {
+                        "Url": "../images/ws001_1.jpg"
+                    },
+                    {
+                        "Url": "../images/ws001_2.jpg"
+                    },
+                    {
+                        "Url": "../images/ws001_3.jpg"
+                    },
+                    {
+                        "Url": "../images/ws001_4.jpg"
+                    },
+                    {
+                        "Url": "../images/ws001_5.jpg"
+                    }
+                ],
+                "Url": "pages/item/ws001.html",
+                "Size": [
+                    {
+                        "Size": "36",
+                        "Qtt": "1"
+                    },
+                    {
+                        "Size": "37",
+                        "Qtt": "1"
+                    },
+                    {
+                        "Size": "38",
+                        "Qtt": "1"
+                    },
+                    {
+                        "Size": "39",
+                        "Qtt": "2"
+                    },
+                    {
+                        "Size": "40",
+                        "Qtt": "1"
+                    }
+                ]
+            }
+        ],
+        "Casual": [
+            {
+                "ID": "WS002",
+                "Name": "NMD",
+                "Brand": "Adidas",
+                "Color": "White",
+                "Price": "2990000",
+                "Img": [
+                    {
+                        "Url": "../images/ws002_1.jpg"
+                    },
+                    {
+                        "Url": "../images/ws002_2.jpg"
+                    },
+                    {
+                        "Url": "../images/ws002_3.jpg"
+                    },
+                    {
+                        "Url": "../images/ws002_4.jpg"
+                    },
+                    {
+                        "Url": "../images/ws002_5.jpg"
+                    }
+                ],
+                "Url": "pages/item/ws002.html",
+                "Size": [
+                    {
+                        "Size": "36",
+                        "Qtt": "0"
+                    },
+                    {
+                        "Size": "37",
+                        "Qtt": "0"
+                    },
+                    {
+                        "Size": "38",
+                        "Qtt": "1"
+                    },
+                    {
+                        "Size": "39",
+                        "Qtt": "0"
+                    },
+                    {
+                        "Size": "40",
+                        "Qtt": "1"
+                    }
+                ]
+            }
+        ],
+        "Gym": [
+            {
                     "ID": "WS003",
                     "Name": "Airmax Flyknit",
                     "Brand": "Nike",
                     "Color": "Colorful",
                     "Price": "4550000",
-                    "Img":
-                    [
+                    "Img": [
                         {
-                            "Url":"images/ws003_1.jpg"
+                            "Url": "../images/ws003_1.jpg"
                         },
                         {
-                            "Url":"images/ws003_2.jpg"
+                            "Url": "../images/ws003_2.jpg"
                         },
                         {
-                            "Url":"images/ws003_3.jpg"
+                            "Url": "../images/ws003_3.jpg"
                         },
                         {
-                            "Url":"images/ws003_4.jpg"
+                            "Url": "../images/ws003_4.jpg"
                         },
                         {
-                            "Url":"images/ws003_5.jpg"
+                            "Url": "../images/ws003_5.jpg"
                         }
                     ],
                     "Url": "pages/item/ws003.html",
-                    "Size":
-                    [
+                    "Size": [
                         {
                             "Size": "36",
                             "Qtt": "1"
@@ -442,39 +394,33 @@
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "Type": "Basketball",
-            "Item":
-            [
-                {
+        ],
+        "Basketball": [
+            {
                     "ID": "WS004",
                     "Name": "Lebron 12",
                     "Brand": "Nike",
                     "Color": "Colorful",
                     "Price": "5200000",
-                    "Img":
-                    [
+                    "Img": [
                         {
-                            "Url":"images/ws004_1.jpg"
+                            "Url": "../images/ws004_1.jpg"
                         },
                         {
-                            "Url":"images/ws004_2.jpg"
+                            "Url": "../images/ws004_2.jpg"
                         },
                         {
-                            "Url":"images/ws004_3.jpg"
+                            "Url": "../images/ws004_3.jpg"
                         },
                         {
-                            "Url":"images/ws004_4.jpg"
+                            "Url": "../images/ws004_4.jpg"
                         },
                         {
-                            "Url":"images/ws004_5.jpg"
+                            "Url": "../images/ws004_5.jpg"
                         }
                     ],
                     "Url": "pages/item/ws004.html",
-                    "Size":
-                    [
+                    "Size": [
                         {
                             "Size": "36",
                             "Qtt": "1"
@@ -497,39 +443,33 @@
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "Type": "Soccer",
-            "Item":
-            [
-                {
+        ],
+        "Soccer": [
+            {
                     "ID": "WS005",
                     "Name": "Barricade Team 5",
                     "Brand": "Adidas",
                     "Color": "Green",
                     "Price": "2450000",
-                    "Img":
-                    [
+                    "Img": [
                         {
-                            "Url":"images/ws005_1.jpg"
+                            "Url": "../images/ws005_1.jpg"
                         },
                         {
-                            "Url":"images/ws005_2.jpg"
+                            "Url": "../images/ws005_2.jpg"
                         },
                         {
-                            "Url":"images/ws005_3.jpg"
+                            "Url": "../images/ws005_3.jpg"
                         },
                         {
-                            "Url":"images/ws005_4.jpg"
+                            "Url": "../images/ws005_4.jpg"
                         },
                         {
-                            "Url":"images/ws005_5.jpg"
+                            "Url": "../images/ws005_5.jpg"
                         }
                     ],
                     "Url": "pages/item/ws005.html",
-                    "Size":
-                    [
+                    "Size": [
                         {
                             "Size": "36",
                             "Qtt": "2"
@@ -552,29 +492,26 @@
                         }
                     ]
                 }
-            ]
-        }
-    ],
-    "Acessories":
-    [
+        ]
+    },
+    "Acessories": [
         {
             "ID": "A001",
-            "Img":
-            [
+            "Img": [
                 {
-                    "Url":"images/a001_1.jpg"
+                    "Url": "../images/a001_1.jpg"
                 },
                 {
-                    "Url":"images/a001_2.jpg"
+                    "Url": "../images/a001_2.jpg"
                 },
                 {
-                    "Url":"images/a001_3.jpg"
+                    "Url": "../images/a001_3.jpg"
                 },
                 {
-                    "Url":"images/a001_4.jpg"
+                    "Url": "../images/a001_4.jpg"
                 },
                 {
-                    "Url":"images/a001_5.jpg"
+                    "Url": "../images/a001_5.jpg"
                 }
             ],
             "Url": "pages/item/a001.html",
@@ -586,22 +523,21 @@
         },
         {
             "ID": "A002",
-            "Img":
-            [
+            "Img": [
                 {
-                    "Url":"images/a002_1.jpg"
+                    "Url": "../images/a002_1.jpg"
                 },
                 {
-                    "Url":"images/a002_2.jpg"
+                    "Url": "../images/a002_2.jpg"
                 },
                 {
-                    "Url":"images/a002_3.jpg"
+                    "Url": "../images/a002_3.jpg"
                 },
                 {
-                    "Url":"images/a002_4.jpg"
+                    "Url": "../images/a002_4.jpg"
                 },
                 {
-                    "Url":"images/a002_5.jpg"
+                    "Url": "../images/a002_5.jpg"
                 }
             ],
             "Url": "pages/item/a002.html",
@@ -612,4 +548,89 @@
             "Qtt": "20"
         }
     ]
+    },
+"Orders":  
+    [
+        {
+            "ID": "OD0001",
+            "Customer": "Bin",
+            "Address": "abcd",
+            "Tel": "0120690960",
+            "Date": "6/5/2016",
+            "Items":
+            [
+                {
+                    "ID": "MS001",
+                    "Size": "41",
+                    "Qtt": "1"
+                },
+                {
+                    "ID": "MS002",
+                    "Size": "42",
+                    "Qtt": "2"
+                }
+            ],
+            "Price": "10000000",
+            "Status": "Shipping"
+        },
+        {
+            "ID": "OD0002",
+            "Customer": "Tri",
+            "Address": "nothing",
+            "Tel": "0120690690",
+            "Date": "6/5/2016",
+            "Items":
+            [
+                {
+                    "ID": "MS004",
+                    "Size": "43",
+                    "Qtt": "1"
+                },
+                {
+                    "ID": "MS005",
+                    "Size": "44",
+                    "Qtt": "2"
+                }
+            ],
+            "TotalPrice": "10000000",
+            "Shipping": "Finished"
+        }
+    ],
+"Carts":
+    {
+        "fb000000000":
+        {
+           "Items":
+            [
+                {
+                    "ID": "MS004",
+                    "Size": "43",
+                    "Qtt": "1"
+                },
+                {
+                    "ID": "MS005",
+                    "Size": "44",
+                    "Qtt": "2"
+                }
+            ],
+            "TotalPrice": "10000000"
+        },
+        "fb000000001":
+        {
+           "Items":
+            [
+                {
+                    "ID": "MS001",
+                    "Size": "41",
+                    "Qtt": "1"
+                },
+                {
+                    "ID": "MS002",
+                    "Size": "42",
+                    "Qtt": "2"
+                }
+            ],
+            "Price": "10000000"
+        }
+    }   
 }
