@@ -43,7 +43,7 @@ h4{
 }
 
 .container{
-    width: 1170px;
+    width: 80%;
     margin: 0 auto;
     padding: 0 15px;
     
@@ -76,6 +76,20 @@ h4{
     display: inline-block;
     float: right;
 }
+@media only screen and (max-width: 720px){
+    .header-top-left{
+        float: none !important;
+        margin: 20px 0;
+        display: block !important;
+    }
+    .header-top-right{
+        float: none !important;
+    }
+    .header-top-right div{
+        display: block !important;
+    }
+}
+
 .header-top-right div{
     padding: 10px 10px;
     padding-right: 60px;
@@ -124,6 +138,23 @@ h4{
     display: inline-block;
     position: relative;
 }
+@media only screen and (max-width: 720px){
+    .logo {
+        display: block;
+    }
+    .logo h1{
+        font-size: 78px;
+    }
+    .header-bot-right{
+        margin: 0 auto!important;
+        display:inline-block!important;
+        float:none;
+    }
+    .header-bot-right div:not(.form-hover){
+        display: block !important;
+    }
+}
+
 .header-bot-right a{
     padding: 10px 15px;
     font-size: 18px;
@@ -143,6 +174,18 @@ h4{
 }
 .card-hover:hover img{
     transform: scale(1.2);
+}
+@media only screen and (max-width: 960px){ 
+    .card-hover .card-title{
+        line-height: 24px !important;
+        font-size: 18px;
+    }
+    .btn{
+        font-size: 12px;
+        line-height: 24px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 }
 
 .banner-box{
@@ -217,6 +260,11 @@ h4{
 .Mid-content p{
     font-size: 1.1em;
 }
+@media only screen and (max-width: 1200px){
+    .Mid-content h2{
+        font-size: 1.5em;
+    }   
+}
 
 .Album{
     margin: 0 auto;
@@ -261,6 +309,14 @@ h4{
     opacity: 0;
     z-index: 3;
 }
+@media only screen and (max-width: 720px){
+    .Album h4{
+        font-size: 10px;
+        top: 30%;
+        left: 25%;
+    }
+}
+
 .Album-lb {
     margin: 0 auto;
     text-align: center;
@@ -296,6 +352,12 @@ h4{
     text-align: center;
     margin: 30px 0;
 }
+@media only screen and (max-width: 360px){
+    .Footer h3{
+        font-size: 1.5em;
+    }
+}
+
 .SubGroup{
     width: 50%;
     margin: 30px auto;
@@ -328,6 +390,23 @@ h4{
     color: #fff !important;
     background-color: #000 !important;
 }
+@media only screen and (max-width: 1200px){
+    .SubGroup {
+        width: 80% !important;
+    }
+
+}
+@media only screen and (max-width: 720px){
+    .SubGroup {
+        width: 90% !important;
+    }
+    .SubGroup input{
+        display: block !important;
+        margin: 10px auto !important;
+        width: 70% !important;
+    }  
+}
+
 .Footer-bot{
     margin: 50px 0;
 }
@@ -340,6 +419,12 @@ h4{
     float: left;
     display: inline-block;
 }
+@media only screen and (max-width: 800px){
+    .Footer-menu li{
+        display: block !important;
+    }
+}
+
 .Footer-menu ul{
     list-style: none;
 }
@@ -376,6 +461,12 @@ h4{
     transition: color 0.7s;
     color: #F9D9BE;
 }
+@media only screen and (max-width: 800px){
+    .social li{
+        display: block;
+    }
+}
+
 .copyright{
     margin: 80px auto 0px auto;
     text-align: center;
@@ -394,6 +485,20 @@ h4{
     text-align: left;
     display: none !important;
 }
+@media only screen and (max-width: 720px){
+    .form-hover{
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        display: none !important;
+    }
+    .show-form:active .form-hover, .show-form:visited .form-hover, .show-form:hover .form-hover{
+        position: relative !important;
+        opacity: 1;
+        transition: opacity 1s !important;
+    }
+}
+
 .li-hd{
     font-size: 16px;
     font-weight: 100;
@@ -498,7 +603,7 @@ a:focus {
 }*/
 
 .container-nav{
-    width: 1170px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 10%;
     padding: 0 15px;
@@ -519,6 +624,11 @@ a:focus {
 .btn-floating .fa{
     font-size: 36px !important;
     margin-top: 12%;
+}
+@media only screen and (max-width: 720px){
+    .s7{
+        width: 95% !important;
+    }
 }
 
 
