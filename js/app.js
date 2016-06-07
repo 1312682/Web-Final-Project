@@ -2,6 +2,6 @@
     'use strict';
 
     angular.module('app', [
-        'app.product'
+        'app.product', 'app.list'
     ]);
 })();
