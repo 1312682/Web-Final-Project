@@ -1,0 +1,62 @@
+<table id="example1" class="table table-bordered table-striped" ng-controller= "SneakersAppCtrl as vm">
+        <thead>
+            <tr>
+                <th rowspan="2">ID</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Gender</th>
+                <th rowspan="2">Type</th>
+                <th rowspan="2">Brand</th>
+                <th rowspan="2">Color</th>
+                <th rowspan="2">Price</th>
+                <th colspan="9">Size</th>
+            </tr>
+            <tr>
+                <th>36</th>
+                <th>37</th>
+                <th>38</th>
+                <th>39</th>
+                <th>40</th>
+                <th>41</th>
+                <th>42</th>
+                <th>43</th>
+                <th>44</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr ng-repeat="item in vm.shoes"> 
+                <td>{{item.ID}}</td>
+                <td>{{item.Name}}</td>
+                <td>{{item.Gender}}</td>
+                <td>{{item.Type}}</td>
+                <td>{{item.Brand}}</td>
+                <td>{{item.Color}}</td>
+                <td>{{item.Price}}</td>
+                <td ng-repeat="size in item.Size">{{size.Qtt}}</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th rowspan="2">ID</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Gender</th>
+                <th rowspan="2">Type</th>
+                <th rowspan="2">Brand</th>
+                <th rowspan="2">Color</th>
+                <th rowspan="2">Price</th>
+                <th>36</th>
+                <th>37</th>
+                <th>38</th>
+                <th>39</th>
+                <th>40</th>
+                <th>41</th>
+                <th>42</th>
+                <th>43</th>
+                <th>44</th> 
+            </tr>
+            <tr>
+                <th colspan="9">Size</th>
+            </tr>
+        </tfoot>
+</table>

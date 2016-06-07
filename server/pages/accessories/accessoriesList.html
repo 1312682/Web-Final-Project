@@ -1,0 +1,32 @@
+<table id="example1" class="table table-bordered table-striped" ng-controller= "AccessoriesAppCtrl as vm">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Color</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in vm.acs">
+            <td>{{item.ID}}</td>
+            <td>{{item.Name}}</td>
+            <td>{{item.Brand}}</td>
+            <td>{{item.Color}}</td>
+            <td>{{item.Price}}</td>
+            <td>{{item.Qtt}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Color</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </tfoot>
+</table>

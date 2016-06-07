@@ -1,8 +1,14 @@
+(function(angular) {
+  'use strict';
+function SneakersAppController() {
+
+}
+
 angular.
   module('SneakersApp').
   component('sneakersList', {
-    template:
-    '<table id="example1" class="table table-bordered table-striped">'+
+    templateUrl: 'sneakersList.html',
+    /*'<table id="example1" class="table table-bordered table-striped">'+
         '<thead>'+
             '<tr>'+
                 '<th rowspan="2">ID</th>'+
@@ -28,7 +34,7 @@ angular.
         '</thead>'+
         '<tbody>'+
             '<tr>' +
-                '<td>MS001</td>'+
+                '<td>{{$ctrl.sn[0].ID}}</td>'+
                 '<td>UltraBoost</td>'+
                 '<td>Men</td>'+
                 '<td>Running</td>'+
@@ -88,19 +94,10 @@ angular.
                 '<th colspan="9">Size</th>'+
             '</tr>'+
         '</tfoot>'+
-    '</table>',
-    controller: function sneakersListController() {
-      this.phones = [
-        {
-          name: 'Nexus S',
-          snippet: 'Fast just got faster with Nexus S.'
-        }, {
-          name: 'Motorola XOOM™ with Wi-Fi',
-          snippet: 'The Next, Next Generation tablet.'
-        }, {
-          name: 'MOTOROLA XOOM™',
-          snippet: 'The Next, Next Generation tablet.'
-        }
-      ];
+    '</table>',*/
+    controller: SneakersAppController,
+    bindings: {
+        sneakers: '<'
     }
   });
+})(window.angular);
