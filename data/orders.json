@@ -1,0 +1,42 @@
+[
+    {
+        "ID": "OD0001",
+        "Customer": "Bin",
+        "Address": "abcd",
+        "Tel": "0120690960",
+        "Items":
+        [
+            {
+                "ID": "MS001",
+                "Size": "41",
+                "Qtt": "1"
+            },
+            {
+                "ID": "MS002",
+                "Size": "42",
+                "Qtt": "2"
+            }
+        ],
+        "Price": "10000000"
+    },
+    {
+        "ID": "OD0002",
+        "Customer": "Tri",
+        "Address": "nothing",
+        "Tel": "0120690690",
+        "Items":
+        [
+            {
+                "ID": "MS004",
+                "Size": "43",
+                "Qtt": "1"
+            },
+            {
+                "ID": "MS005",
+                "Size": "44",
+                "Qtt": "2"
+            }
+        ],
+        "Price": "10000000"
+    }
+]

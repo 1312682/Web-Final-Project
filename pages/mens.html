@@ -1,0 +1,206 @@
+<body >
+     <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.1.8/angular-materialize.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+
+    <!-- Navbar goes here -->
+    <div class="main">
+        <div class="container" ng-controller="ListController as vm">
+            <div class="row">
+                <div class="temp">
+                    <div class="col s3">
+                        <!-- Grey navigation panel -->
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>GENDER</h4></li>
+                            <a href="" class="collection-item" ng-click="vm.changeFilter('Men')">
+                                <p1>Men</p1><span class="badge">1</span></a>
+                            <a href="" class="collection-item" ng-click="vm.changeFilter('Women')">
+                                <p1>Women</p1><span class="badge">1</span></a>
+                        </ul>
+
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>CATEGORIES</h4></li>
+                            <a href="" class="collection-item">
+                                <p1>Nike</p1><span class="badge">1</span></a>
+                            <a href="" class="collection-item">
+                                <p1>Convert</p1><span class="badge">1</span></a>
+                        </ul>
+
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>COLORS</h4></li>
+                            <a href="#!" class="collection-item">
+                                <p1>Blue</p1><span class="badge">1</span></a>
+                            <a href="#!" class="collection-item">
+                                <p1>Black</p1><span class="badge">1</span></a>
+                            <a href="#!" class="collection-item">
+                                <p1>Gray</p1><span class="badge">1</span></a>
+                            <a href="#!" class="collection-item">
+                                <p1>Green</p1><span class="badge">1</span></a>
+                            <a href="#!" class="collection-item">
+                                <p1>Red</p1><span class="badge">1</span></a>
+                            <a href="#!" class="collection-item">
+                                <p1>White</p1><span class="badge">1</span></a>
+                        </ul>
+
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>SIZES</h4></li>
+                            <a href="#!" class="collection-item">
+                                <p1>36</p1><span class="badge">1</span></li>
+                                <a href="#!" class="collection-item">
+                                    <p1>37</p1><span class="badge">1</span></a>
+                                <a href="#!" class="collection-item">
+                                    <p1>38</p1><span class="badge">1</span></a>
+                                <a href="#!" class="collection-item">
+                                    <p1>39</p1><span class="badge">1</span></a>
+                                <a href="#!" class="collection-item">
+                                    <p1>40</p1><span class="badge">1</span></a>
+                        </ul>
+
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>PRICE</h4></li>
+                            <a href="#!" class="collection-item">
+                                <p1>200$-400$</p1><span class="badge">1</span></a>
+                            <a href="#!" class="collection-item">
+                                <p1>400$-600$</p1><span class="badge">1</span></a>
+                            <a href="#!" class="collection-item">
+                                <p1>600$-800$</p1><span class="badge">1</span></a>
+                            <a href="#!" class="collection-item">
+                                <p1>800$-1000$</p1><span class="badge">1</span></a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col s9">
+                    <!-- Teal page content  -->
+
+                    <div class="row">
+                        <div class="col s6">
+                            <ul class="breadcrumb">
+                                <li>
+                                    <a href="#">
+                                        <p1>Home</p1>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <p1>{{vm.category}}</p1>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="category">
+                        <li class="card small col s4 hoverable card-hover" ng-repeat="item in vm.listItem">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="{{item.Img[0].Url}}">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4"><h4>{{item.Name}}</h4><i class="material-icons right">more_vert</i></span>
+                                <a class="btn waves-effect">
+                                    <p1>Shop Now!</p1>
+                                </a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><h4>{{item.Name}}</h4><i class="material-icons right">close</i></span>
+                                <p>Sneakers for men. Prices and quanlities are fascinating!</p>
+                                <a class="btn waves-effect">
+                                    <p1>Shop Now!</p1>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="row">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Advertising-->
+    <div class="ads">
+    </div>
+
+    <div class="preloader-wrapper big active pos" ng-show="vm.loaded">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+    </script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAUkGzSslnUVmHkmH1Lb9KOVy4EfU5TCKI",
+            authDomain: "web-final-cb2b3.firebaseapp.com",
+            databaseURL: "https://web-final-cb2b3.firebaseio.com",
+            storageBucket: "web-final-cb2b3.appspot.com",
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="../js/app.js"></script>
+    <script src="../js/product.module.js"></script>
+    <script src="../js/product.controller.js"></script>
+    <script src="../js/list.module.js"></script>
+    <script src="../js/list.controller.js"></script>
+</body>

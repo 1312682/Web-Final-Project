@@ -1,5 +1,4 @@
 {
-"Items":{
     "Men": {
         "Running": [
             {
@@ -548,89 +547,4 @@
             "Qtt": "20"
         }
     ]
-    },
-"Orders":  
-    [
-        {
-            "ID": "OD0001",
-            "Customer": "Bin",
-            "Address": "abcd",
-            "Tel": "0120690960",
-            "Date": "6/5/2016",
-            "Items":
-            [
-                {
-                    "ID": "MS001",
-                    "Size": "41",
-                    "Qtt": "1"
-                },
-                {
-                    "ID": "MS002",
-                    "Size": "42",
-                    "Qtt": "2"
-                }
-            ],
-            "Price": "10000000",
-            "Status": "Shipping"
-        },
-        {
-            "ID": "OD0002",
-            "Customer": "Tri",
-            "Address": "nothing",
-            "Tel": "0120690690",
-            "Date": "6/5/2016",
-            "Items":
-            [
-                {
-                    "ID": "MS004",
-                    "Size": "43",
-                    "Qtt": "1"
-                },
-                {
-                    "ID": "MS005",
-                    "Size": "44",
-                    "Qtt": "2"
-                }
-            ],
-            "TotalPrice": "10000000",
-            "Shipping": "Finished"
-        }
-    ],
-"Carts":
-    {
-        "fb000000000":
-        {
-           "Items":
-            [
-                {
-                    "ID": "MS004",
-                    "Size": "43",
-                    "Qtt": "1"
-                },
-                {
-                    "ID": "MS005",
-                    "Size": "44",
-                    "Qtt": "2"
-                }
-            ],
-            "TotalPrice": "10000000"
-        },
-        "fb000000001":
-        {
-           "Items":
-            [
-                {
-                    "ID": "MS001",
-                    "Size": "41",
-                    "Qtt": "1"
-                },
-                {
-                    "ID": "MS002",
-                    "Size": "42",
-                    "Qtt": "2"
-                }
-            ],
-            "Price": "10000000"
-        }
-    }   
 }

@@ -1,0 +1,137 @@
+body {
+    font-family: PT Sans Narrow, sans-serif !important;
+}
+h1 {
+    margin-bottom: 5px;
+}
+
+.section {
+    font-family: PT Sans Narrow, sans-serif !important;
+}
+
+.col-margin {
+    margin-top: 20px;
+}
+
+.margin {
+    margin-left: 10px !important;
+}
+
+.col.s2 img {
+    cursor: pointer;
+}
+
+.col.s2 a:focus img {
+    border: 3px solid #333 !important;
+}
+
+.labelId {
+    font-size: 15px;
+    color: #8C8C8C;
+    opacity: 0.75;
+    text-align: left;
+    line-height: 21px;
+    margin-top: -5px;
+}
+
+.castItem {
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.size {
+    margin-top: 30px;
+}
+
+.select-wrapper {
+    font-size: 15px !important;
+    line-height: 22.5px !important;
+    height: 46px !important;
+    width: 300px !important;
+}
+
+.addtc {
+    width: 300px !important;
+    background-color: #4db6ac;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .col.s7 {
+        width: 95% !important;
+    }
+    .s5 {
+        display: inline-table !important;
+        width:95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float:none !important;
+        text-align: center !important;
+    }
+    .labelId {
+        text-align: center !important;
+    }
+    .col-margin {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float:none !important;
+    }
+    .size{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+    }
+    .select-wrapper {
+        width: 95% !important;
+    }
+    .addtc{
+        width: 95% !important;
+    }
+    .col.s2 {
+        width: 20% !important;
+        padding: 2px !important;
+    }
+    .margin {
+        margin-left: auto !important;
+        margin-bottom: auto !important;
+    }
+}
+.caret {
+    height: 15px !important;
+    line-height: 15px !important;
+}
+
+.select-dropdown {
+    font-size: 15px !important;
+    height: 45px !important;
+    line-height: 45px !important;
+}
+
+ul.select-dropdown {
+    line-height: 22.5px !important;
+    height: auto !important;
+}
+
+ul.select-dropdown li {
+    line-height: 22.5px !important;
+}
+
+.size label {
+    font-size: 12px !important;
+    height: 18px !important;
+    line-height: 18px !important;
+}
+
+.addtc:hover {
+    background-color: #80cbc4 !important;
+    color: #000 !important;
+}
+
+.related {
+    margin-top: 20px;
+}
+
+.related h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
