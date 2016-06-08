@@ -1,0 +1,73 @@
+<div ng-controller= "OrdersAppCtrl as vm" style="position:relative;">
+<div class="formShowItems" ng-show="vm.Show">
+    <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th colspan="4" style="text-align: center!important;">Order's ID: {{vm.product.ID}}</th>
+                </tr>
+                <tr>
+                    <th>ID item</th>
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>TotalPrice</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in vm.product.Items">
+                    <td>{{item.ID}}</td>
+                    <td>{{item.Size}}</td>
+                    <td>{{item.Qtt}}</td>
+                    <td>{{item.TotalPrice}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3" style="text-align: center!important;">Total Price:</th>
+                    <th>{{vm.product.TotalPrice}}</th>
+                </tr>
+            </tfoot>
+    </table>
+    <button type="button" class="btn btn-danger" ng-click="vm.Show = false" style="margin:20px 10%;width: 80%;">Cancel</button>
+</div>
+<table id="example1" class="table table-bordered table-striped" ng-show="!vm.Show">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Customer's Name</th>
+            <th>Address</th>
+            <th>Telephone</th>
+            <th>Date Created</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Items</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in vm.orders">
+            <td>{{item.ID}}</td>
+            <td>{{item.Customer}}</td>
+            <td>{{item.Address}}</td>
+            <td>{{item.Tel}}</td>
+            <td>{{item.Date}}</td>
+            <td>{{item.TotalPrice}}</td>
+            <td>{{item.Status}}</td>
+            <td>
+                <button type="button" class="btn btn-info" ng-click="vm.showForm($index)">Show Items</button>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+            <th>ID</th>
+            <th>Customer's Name</th>
+            <th>Address</th>
+            <th>Telephone</th>
+            <th>Date Created</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Items</th>
+        </tr>
+    </tfoot>
+</table>
+</div>

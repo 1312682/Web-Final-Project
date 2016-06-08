@@ -18,9 +18,11 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link href="../../dist/css/skins/_all-skins.css" rel="stylesheet" type="text/css" />
+    <!-- Form orders style-->
+    <link href="orders.css" rel="stylesheet" type="text/css"/>
   </head>
     
-<body class="skin-blue sidebar-mini" ng-app="AccessoriesApp">
+<body class="skin-blue sidebar-mini" ng-app="OrdersApp">
     <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <!-- Firebase -->
@@ -42,10 +44,10 @@
     <script src="../../js/app.js" type="text/javascript">
     </script>
     <!--Controller-->
-    <script src="../../js/accessoriesApp.controller.js" type="text/javascript">
+    <script src="../../js/ordersApp.controller.js" type="text/javascript">
     </script>
     <!-- sneakers-list.component.js -->
-    <script src="../../js/accessories-list.component.js" type="text/javascript">
+    <script src="../../js/orders-list.component.js" type="text/javascript">
     </script>
     
     
@@ -348,7 +350,7 @@
                     <span class="label pull-right bg-red">4</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="../orders/orders.html"><i class="fa fa-circle-o"></i> View All Orders</a></li>
+                    <li><a href=""><i class="fa fa-circle-o"></i> View All Orders</a></li>
                     <li><a href=""><i class="fa fa-circle-o text-red"></i> View New Orders</a></li>
                 </ul>
             </li>
@@ -367,8 +369,8 @@
                     <i class="fa fa-th"></i> <span>Accessories</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="accessories.html"><i class="fa fa-circle-o"></i> View All Accessories</a></li>
-                    <li><a href="addAcs.html"><i class="fa fa-circle-o text-red"></i> Add New Accessories</a></li>
+                    <li><a href="../accessories/accessories.html"><i class="fa fa-circle-o"></i> View All Accessories</a></li>
+                    <li><a href="../accessories/addAcs.html"><i class="fa fa-circle-o text-red"></i> Add New Accessories</a></li>
                 </ul>
             </li>
           </ul>
@@ -400,8 +402,8 @@
                         <div class="box-header">
                             <h3 class="box-title">Accessories Data</h3>
                         </div><!-- /.box-header -->
-                        <div class="box-body">
-                            <accessories-list></accessories-list>
+                        <div class="box-body"  ng-controller= "OrdersAppCtrl as vm">
+                            <orders-list></orders-list>
                   <!--<table id="example1" class="table table-bordered table-striped">
                     <thead>
                         <tr>
