@@ -10,7 +10,7 @@ h1 {
 }
 
 .col-margin {
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 .margin {
@@ -26,21 +26,21 @@ h1 {
 }
 
 .labelId {
-    font-size: 15px;
-    color: #8C8C8C;
-    opacity: 0.75;
-    text-align: left;
-    line-height: 21px;
-    margin-top: -5px;
+    font-size: 15px !important;
+    color: #8C8C8C !important;
+    opacity: 0.75 !important;
+    text-align: left !important;
+    line-height: 21px !important;
+    margin-top: -5px !important;
 }
 
 .castItem {
-    font-size: 27px;
-    margin-top: 20px;
+    font-size: 27px !important;
+    margin-top: 20px !important;
 }
 
 .size {
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 
 .select-wrapper {
@@ -52,8 +52,8 @@ h1 {
 
 .addtc {
     width: 300px !important;
-    background-color: #4db6ac;
-    font-size: 20px;
+    background-color: #4db6ac !important;
+    font-size: 20px !important;
 }
 
 @media only screen and (max-width: 600px) {

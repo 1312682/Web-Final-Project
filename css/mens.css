@@ -164,7 +164,7 @@ h4{
 }
 
 .category{
-    padding: 0;
+    padding: 0 !important;
     list-style: none; 
     overflow: hidden;
 }
@@ -722,7 +722,7 @@ span.badge {
     }
     .row .col.s4{
         width: 30% !important;
-        min-width: 200px !important;
+        min-width: 100px !important;
         margin-left: 10px !important;
         margin-right: auto !important;
     }

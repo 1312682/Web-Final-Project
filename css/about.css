@@ -603,14 +603,12 @@ a:focus {
 }*/
 
 .container-nav{
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 10%;
     padding: 0 15px;
     text-align: center;
-    
 }
-
 .btn-floating{
     background-color: #F9D9BE;
     width: 72px !important;

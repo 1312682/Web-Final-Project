@@ -9,8 +9,18 @@ a{
     color: white;
 }
 a:hover{
+    color: #000 !important;
     text-decoration: none;
 }
+
+.text {
+    color: #fff !important;
+}
+
+.text:hover {
+    color: #fff !important;
+}
+
 p{
     color: #999;
     font-size: 16px;
@@ -93,8 +103,14 @@ p{
     border-right: 1px solid grey;
 }
 .header-top-right a:hover{
-    color:#F9D9BE;
+    color:#F9D9BE !important;
     transition: color 0.5s;
+}
+
+.header-top-right a:focus{
+    color:#fff !important;
+    outline: none !important;
+    text-decoration: none !important;
 }
 
 
@@ -119,6 +135,11 @@ p{
     text-decoration: none;
     color: #fff;
 }
+
+.logo a:focus {
+    outline: none !important;
+    text-decoration: none !important;
+}
 .header-bot-right{
     display: inline-block;
     float: right;
@@ -127,6 +148,17 @@ p{
     /*vertical-align: text-bottom;*/
     /*line-height: 12em;*/
 }
+
+.header-bot-right a:hover {
+    color: #000 !important;
+}
+
+.header-bot-right a:focus {
+    color: #fff !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
 .header-bot-right div{
     display: inline-block;
     position: relative;
@@ -152,6 +184,11 @@ p{
     font-size: 18px;
     margin-right: 5px;
 }
+
+.header-bot-right li a:hover {
+    color:#F9D9BE !important;    
+}
+
 .sale{
     color: #F9D9BE;
 }
@@ -523,5 +560,101 @@ p{
     background-color: #F9D9BE;
 }
 
+/* Update by Tu*/
+.modal {
+    height: 550px !important;
+    width: 500px;        
+    background-color: #546e7a;
+    top: -10% !important;
+    max-height: 90% !important;     
+}
 
+.modal-content {
+    height: 550px !important;    
+    border-radius: 0 !important;    
+}
 
+.modal-content h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 20px !important;
+}
+
+.input-field {
+    font-size: 30px !important;
+    margin-bottom: 5px !important;   
+}
+
+.input-field .prefix.active,.input-field label {
+    color: #F9D9BE !important;
+}
+
+.input-field label {
+    font-size: 1.5rem;
+}
+
+.input-field label.active {
+    font-size: 1rem;
+}
+
+input:focus {
+    border-bottom-color: #F9D9BE !important;
+    box-shadow: 0 1px 0 0 #F9D9BE !important;
+}
+
+.none {
+    height: 310px;
+}
+
+.login a {
+    color: #F9D9BE;
+    text-align: center !important;
+    border: 1px solid #fff !important;
+    border-radius: 0 !important;
+}
+
+.login a:focus, .forgot a:focus {
+    color: #F9D9BE !important;        
+    text-decoration: none !important;
+}
+
+.login a:hover, .forgot a:hover {
+    color: #F9D9BE !important;    
+}
+
+.forgot a,.forgot p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+}
+
+.or hr, .dont hr {
+    color: #fff;
+}
+
+.or, .dont {
+    position: relative;
+}
+
+.or div {
+    position: absolute;
+    top: 10px;
+    background-color: #546e7a;
+    width: 10%;
+    left: 45%;
+    padding: 0 10px 0 10px;
+}
+
+.dont div {
+    position: absolute;
+    top: 10px;
+    background-color: #546e7a;
+    width: 40%;
+    left: 30%;
+    padding: 0 10px 0 10px;
+}

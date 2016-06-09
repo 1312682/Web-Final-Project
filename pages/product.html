@@ -1,118 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="../css/style.css">
-    <link type="text/css" rel="stylesheet" href="../css/product.css">
-</head>
-
-<body ng-app="app" ng-controller="ProductController as vm">
-    <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
-    <script src="../js/angular.min.js"></script>
-    <script src="../js/jquery.elevatezoom.js"></script>
-    <script type="text/javascript" src="../js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.1.8/angular-materialize.min.js"></script>
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
-
-    <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-
-    <title>{{vm.product[0].Brand}} {{vm.product[0].Name}}</title>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../images/cover.jpg"></div>
-        <div class="banner">
-            <div class="container">
-                <div class="header-top">
-                    <div class="header-top-left">
-                        <a class="flow-text" href="">Cart: 0đ (0 items) <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:18px;"></i></a>
-                    </div>
-                    <div class="header-top-right">
-                        <div>
-                            <a href="">VNĐ</a>
-                        </div>
-                        <div class="mid">
-                            <a href=""><i class="fa fa-user" aria-hidden="true"></i> My Account</a>
-                        </div>
-                        <div>
-                            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-bottom">
-                    <div class="logo">
-                        <a href="">
-                            <h1><b style="color:#F9D9BE">B</b>OLYBI</h1>
-                        </a>
-                    </div>
-                    <div class="header-bot-right">
-                        <div class="show-form">
-                            <a class="show-men" href="">MENS</a>
-                            <div class="form-hover">
-                                <ul>
-                                    <li class="li-hd">MEN</li>
-                                    <li><a>Running</a></li>
-                                    <li><a>Casual</a></li>
-                                    <li><a>Gym</a></li>
-                                    <li><a>Basketball</a></li>
-                                    <li><a>Soccer</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="show-form">
-                            <a class="show-women" href="">WOMENS</a>
-                            <div class="form-hover">
-                                <ul>
-                                    <li class="li-hd">WOMEN</li>
-                                    <li><a>Running</a></li>
-                                    <li><a>Casual</a></li>
-                                    <li><a>Gym</a></li>
-                                    <li><a>Basketball</a></li>
-                                    <li><a>Soccer</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="show-form">
-                            <a class="show-acessories" href="">ACESSORIES</a>
-                            <div class="form-hover">
-                                <ul>
-                                    <li class="li-hd">ACESORIES</li>
-                                    <li><a>Running</a></li>
-                                    <li><a>Casual</a></li>
-                                    <li><a>Gym</a></li>
-                                    <li><a>Basketball</a></li>
-                                    <li><a>Soccer</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="show-form">
-                            <a href="" class="sale">SALE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<div class="main" ng-controller="ProductController as vm">
     <div class="section white">
         <div class="row container">
             <div class="col s7 col-margin">
                 <div class="row">
-                    <img class="materialboxed responsive-img" data-caption="Lorem ipsum dolor sit amet." width="580" src="{{vm.product[0].Img[vm.number].Url}}">
+                    <img class="materialboxed responsive-img" data-caption="Lorem ipsum dolor sit amet." width="580" src="{{vm.item.Img[vm.number].Url}}">
                 </div>
                 <div class="row">
-                    <div class="col s2 margin" ng-repeat="pImg in vm.product[0].Img">
+                    <div class="col s2 margin" ng-repeat="pImg in vm.item.Img">
                         <a href="">
                             <img class="responsive-img" src="{{pImg.Url}}" ng-click="vm.applyChange($index)">
                         </a>
@@ -120,9 +14,9 @@
                 </div>
             </div>
             <div class="col s5">
-                <h1>{{vm.product[0].Name}}</h1>
-                <div class="labelId">Id: {{vm.product[0].ID}}</div>
-                <div class="castItem">{{vm.product[0].Price}}đ</div>
+                <h1>{{vm.item.Name}}</h1>
+                <div class="labelId">Id: {{vm.item.ID}}</div>
+                <div class="castItem">{{vm.item.Price}}đ</div>
 
                 <div class="input-field col s7 size">
                     <select ng-model="vm.selectSize.value" ng-change="vm.findQtt(vm.selectSize.value)" material-select watch>
@@ -144,138 +38,10 @@
                 </div>
             </div>
         </div>
+        <title>{{vm.item.Brand}} {{vm.item.Name}}</title>
     </div>
-
-    <div class="Bot-Mid-content">
-        <div class="related">
-            <h1>Related Product</h1>
-        </div>
-        <ul class="Album">
-            <li>
-                <div>
-                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <a href="#image1">
-                    <div>
-                        <img class="responsive-img" src="../images/ws005.jpg" />
-                        <div class="Overlay">
-                        </div>
-                        <h4>Roshe Run</h4>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#image1">
-                    <div>
-                        <img class="responsive-img" src="../images/ws005.jpg" />
-                        <div class="Overlay">
-                        </div>
-                        <h4>Roshe Run</h4>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="responsive-img" src="../images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="Footer">
-        <div class="container">
-            <div class="Newsletter">
-                <h3>Newsletter</h3>
-                <div class="SubGroup">
-                    <input type="text" class="tbSub">
-                    <input type="submit" class="btSub" value="Subscribe">
-                </div>
-            </div>
-            <div class="Footer-bot">
-                <div class="Footer-menu">
-                    <ul>
-                        <li>
-                            <a href="">PRIVACY</a>
-                        </li>
-                        <li>
-                            <a href="">TERMS</a>
-                        </li>
-                        <li>
-                            <a href="">SHOP</a>
-                        </li>
-                        <li>
-                            <a href="about.html">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li>
-                            <a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://facebook.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                </div>
-            </div>
-            <div class="copyright">
-                © 2015 Watches. All Rights Reserved | Design by <a href="http://team-vant.tk">NVT</a>
-            </div>
-        </div>
-    </div>
-
-
-
+ 
     <script>
-        $(document).ready(function(){
-            $('.parallax').parallax();
-        });
         $(document).ready(function(){
             $('.materialboxed').materialbox();
         });
@@ -283,21 +49,4 @@
             $('select').material_select();
         });
     </script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAUkGzSslnUVmHkmH1Lb9KOVy4EfU5TCKI",
-            authDomain: "web-final-cb2b3.firebaseapp.com",
-            databaseURL: "https://web-final-cb2b3.firebaseio.com",
-            storageBucket: "web-final-cb2b3.appspot.com",
-        };
-        firebase.initializeApp(config);
-    </script>
-    <script src="../js/app.js"></script>
-    <script src="../js/product.module.js"></script>
-    <script src="../js/product.controller.js"></script>
-    <script src="../js/list.module.js"></script>
-    <script src="../js/list.controller.js"></script>
-</body>
-
-</html>
+</div>

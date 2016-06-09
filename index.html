@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="scotchApp">
 
 <head>
     <title>BOLYBI shop | team VANT</title>
@@ -15,28 +15,25 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/mens.css">
+    <link type="text/css" rel="stylesheet" href="css/about.css">
+    <link type="text/css" rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
-    <script src="js/angular.min.js"></script>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
 
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.1.8/angular-materialize.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-    
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAUkGzSslnUVmHkmH1Lb9KOVy4EfU5TCKI",
-            authDomain: "web-final-cb2b3.firebaseapp.com",
-            databaseURL: "https://web-final-cb2b3.firebaseio.com",
-            storageBucket: "web-final-cb2b3.appspot.com",
-        };
-        firebase.initializeApp(config);
-    </script>
 
     <div class="parallax-container">
         <div class="parallax"><img src="images/cover.jpg"></div>
@@ -47,48 +44,48 @@
                         <a class="flow-text" href="">Cart:$0.00 (0 items) <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:18px;"></i></a>
                         <a class="empty-cart" href="">Empty Cart</a>
                     </div>
-                    <div class="header-top-right">
+                    <div class="header-top-right" ng-controller="LoginController as vm">
                         <div>
                             <a href="">VNĐ</a>
                         </div>
                         <div class="mid">
-                            <a href=""><i class="fa fa-user" aria-hidden="true"></i> My Account</a>
+                            <a href="#loginModal" class="modal-trigger"><i class="fa fa-user" aria-hidden="true"></i> {{vm.displayName}}</a>
                         </div>
                         <div>
-                            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                            <a href="" ng-show="vm.isLogin" ng-click="vm.logout()">Log out</a>
                         </div>
                     </div>
                 </div>
-                <div class="header-bottom">
+                <div class="header-bottom" >
                     <div class="logo">
-                        <a href="">
-                            <h1><b style="color:#F9D9BE">B</b>OLYBI</h1>
+                        <a href="#/">
+                            <h1 class="text"><b style="color:#F9D9BE">B</b>OLYBI</h1>
                         </a>
                     </div>
-                    <div class="header-bot-right">
+                    <div class="header-bot-right" ng-controller="CategoryController as vm">
                         <div class="show-form">
-                            <a class="show-men" href="">MENS</a>
+                            <a class="show-men" href="#/product" ng-click="vm.applyData('Men')">MENS</a>
                             <div class="form-hover">
                                 <ul>
                                     <li class="li-hd">MEN</li>
-                                    <li><a>Running</a></li>
-                                    <li><a>Casual</a></li>
-                                    <li><a>Gym</a></li>
-                                    <li><a>Basketball</a></li>
-                                    <li><a>Soccer</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Running')">Running</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Casual')">Casual</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Gym')">Gym</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Basketball')">Basketball</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Soccer')">Soccer</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="show-form">
-                            <a class="show-women" href="">WOMENS</a>
+                            <a class="show-women" href="#/product" ng-click="vm.applyData('Women')">WOMENS</a>
                             <div class="form-hover">
                                 <ul>
                                     <li class="li-hd">WOMEN</li>
-                                    <li><a>Running</a></li>
-                                    <li><a>Casual</a></li>
-                                    <li><a>Gym</a></li>
-                                    <li><a>Basketball</a></li>
-                                    <li><a>Soccer</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Running')">Running</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Casual')">Casual</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Gym')">Gym</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Basketball')">Basketball</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Soccer')">Soccer</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -114,156 +111,12 @@
         </div>
     </div>
 
-    <!--Advertising-->
-    <div class="ads">
-    </div>
-
     <!--Content-->
     <div class="main">
-        <div class="container">
-            <ul class="category">
-                <li class="col-sm-4">
-                    <div class="card small col s4 hoverable card-hover">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/men.jpeg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">MEN'S SHOES<i class="material-icons right">more_vert</i></span>
-                            <a class="btn waves-effect" href="pages/mens.html">Shop Now!</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">MEN'S SHOES<i class="material-icons right">close</i></span>
-                            <p>Sneakers for men. Prices and quanlities are fascinating!</p>
-                            <a class="btn waves-effect">Shop Now!</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-sm-4">
-                    <div class="card small col s4 hoverable card-hover">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/women.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">MEN'S SHOES<i class="material-icons right">more_vert</i></span>
-                            <a class="btn waves-effect">Shop Now!</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">MEN'S SHOES<i class="material-icons right">close</i></span>
-                            <p>Sneakers for women. Prices and quanlities are fascinating!</p>
-                            <a class="btn waves-effect">Shop Now!</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-sm-4">
-                    <div class="card small col s4 hoverable card-hover">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/a001.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">ACCESSORIES<i class="material-icons right">more_vert</i></span>
-                            <a class="btn waves-effect">Shop Now!</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">ACCESSORIES<i class="material-icons right">close</i></span>
-                            <p>Accessories. Prices and quanlities are fascinating!</p>
-                            <a class="btn waves-effect">Shop Now!</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!--Middle content-->
-    <div class="Mid-content">
-        <div class="container">
-            <h2>Welcome</h2>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-                going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-                middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
-                with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated
-                Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        </div>
+        <div ng-view></div>
+        <script src="js/script.js"></script>
     </div>
 
-    <!--Advertising-->
-    <div class="ads">
-    </div>
-
-    <!--ContentMidBottom-->
-    <div class="Bot-Mid-content">
-        <ul class="Album">
-            <li>
-                <div>
-                    <a href="#image1"><img class="img-responsive" src="images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="img-responsive" src="images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <a href="#image1">
-                    <div>
-                        <img class="img-responsive" src="images/ws005.jpg" />
-                        <div class="Overlay">
-                        </div>
-                        <h4>Roshe Run</h4>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#image1">
-                    <div>
-                        <img class="img-responsive" src="images/ws005.jpg" />
-                        <div class="Overlay">
-                        </div>
-                        <h4>Roshe Run</h4>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="img-responsive" src="images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="img-responsive" src="images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="img-responsive" src="images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="#image1"><img class="img-responsive" src="images/ws005.jpg" /></a>
-                    <div class="Overlay">
-                    </div>
-                    <h4>Roshe Run</h4>
-                </div>
-            </li>
-        </ul>
-    </div>
     <!--Footer-->
     <div class="Footer">
         <div class="container">
@@ -287,7 +140,7 @@
                             <a href="">SHOP</a>
                         </li>
                         <li>
-                            <a href="">ABOUT</a>
+                            <a href="#/about">ABOUT</a>
                         </li>
                         <li>
                             <a href="">CONTACT</a>
@@ -312,10 +165,81 @@
             </div>
         </div>
     </div>
+
+    <!--Login Modal-->
+    <div id="loginModal" class="modal white-text" ng-controller="LoginController as vm">
+        <div class="modal-content blue-grey darken-1">
+            <h4>BOLYBI</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row container" ng-show="!vm.isLogin">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" ng-model="vm.username" type="email" class="validate">
+                            <label for="icon_prefix">Username</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">https</i>
+                            <input id="icon_password" ng-model="vm.password" type="password" class="validate">
+                            <label for="icon_password">Password</label>
+                        </div>
+                        <div class="login" ng-show="vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat modal-action modal-close" ng-click="vm.login()">Log in</a>
+                        </div>
+                        <div class="forgot" ng-show="vm.create">
+                            <a href="" class="col s12">
+                                <p>Forgot your login details?</p> Get help singing in.
+                            </a>
+                        </div>
+                        <div class="col s12 or" ng-show="vm.create">
+                            <hr>
+                            <div>OR</div>
+                        </div>
+                        <div class="login" ng-show="vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat modal-action modal-close" ng-click="vm.loginWithFacebook()">LOG IN WITH FACEBOOK</a>
+                        </div>
+                        <div class="none" ng-show="vm.create"></div>
+                        <div class="login" ng-show="vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat modal-action modal-close" ng-click="vm.loginWithGoogle()">LOG IN WITH GOOGLE+</a>
+                        </div>
+                        <div class="col s12 dont" ng-show="vm.create">
+                            <hr>
+                            <div>Don't have an account?</div>
+                        </div>
+                        <div class="login" ng-show="vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat" ng-click="vm.setFalse()">CREATE AN ACCOUNT?</a>
+                        </div>
+
+                        <div class="login" ng-show="!vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat modal-action modal-close" ng-click="vm.signUp()">CREATE NEW ACCOUNT</a>
+                        </div>
+                        <div class="login" style="margin-top: 400px !important;" ng-show="!vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat" ng-click="vm.setTrue()">BACK</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
     <script>
+        $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+        });
         $(document).ready(function(){
             $('.parallax').parallax();
         });
+    </script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAUkGzSslnUVmHkmH1Lb9KOVy4EfU5TCKI",
+            authDomain: "web-final-cb2b3.firebaseapp.com",
+            databaseURL: "https://web-final-cb2b3.firebaseio.com",
+            storageBucket: "web-final-cb2b3.appspot.com",
+        };
+        firebase.initializeApp(config);
     </script>
 </body>
 
