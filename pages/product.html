@@ -26,7 +26,7 @@
                     <label>Size</label>
                 </div>
                 <div class="input-field col s7 size">
-                    <select ng-model="vm.selectQtt.value" material-select watch>
+                    <select ng-model="vm.selectQtt.value" ng-change="vm.setQtt()" material-select watch>
                         <option
                         ng-repeat="values in vm.selectQtt.quantity">{{values}}</option>
                     </select>
@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="col s7 size">
-                    <a class="waves-effect waves-light btn-large btn-flat addtc">ADD TO CART</a>
+                    <a class="waves-effect waves-light btn-large btn-flat addtc" ng-click="vm.addToCart()">ADD TO CART</a>
                 </div>
             </div>
         </div>

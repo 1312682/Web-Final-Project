@@ -65,6 +65,18 @@ p{
     display: block;
     font-size: 14px;
 }
+
+.header-top-left a:hover{
+    color:#777 !important;
+    transition: color 0.5s;
+}
+
+.header-top-left a:focus, .modal-footer a:focus{
+    color:#000 !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
 .empty-cart{
     float:right;
 }
@@ -112,7 +124,6 @@ p{
     outline: none !important;
     text-decoration: none !important;
 }
-
 
 .header-bottom {
     padding: 32px 0;
@@ -466,9 +477,16 @@ p{
     margin: 10px 20px;
 }
 .Footer-menu a:hover{
-    transition: color 0.7s;
-    color: #F9D9BE;
+    transition: color 0.7s !important;
+    color: #F9D9BE !important;
 }
+
+.Footer-bot a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    color: #000 !important;
+}
+
 .social{
     display: inline-block;
     float: right;
@@ -485,8 +503,8 @@ p{
     font-size: 32px;
 }
 .social a:hover i{
-    transition: color 0.7s;
-    color: #F9D9BE;
+    transition: color 0.7s !important;
+    color: #F9D9BE !important;
 }
 @media only screen and (max-width: 800px){
     .social li{

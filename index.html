@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="scotchApp">
+
+<head>
+    <title>BOLYBI shop | team VANT</title>
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css">
+    
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/mens.css">
+    <link type="text/css" rel="stylesheet" href="css/about.css">
+    <link type="text/css" rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+    <script src="js/materialize-services/jquery-2.2.3.min.js"></script>
+    
+    <script src="js/angular-services/angular.min.js"></script>
+    <script src="js/angular-services/angular-route.min.js"></script>
+    <script src="js/google-services/googleanalytics.js"></script>
+    
+    <script src="js/materialize-services/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.1.8/angular-materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    
+    <script src="js/app.js"></script> 
+    <script src="js/angular-factories/app.factory.js"></script> 
+    <script src="js/angular-controllers/app.category.js"></script> 
+    <script src="js/angular-controllers/app.listproduct.js"></script> 
+    <script src="js/angular-controllers/app.product.js"></script> 
+    <script src="js/angular-controllers/app.login.js"></script> 
+    <script src="js/google-services/googleanalytics-services.js"></script>
+    
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/cover.jpg"></div>
+        <div class="banner">
+            <div class="container">
+                <div class="header-top">
+                    <div class="header-top-left" ng-controller="LoginController as vm">
+                        <a href="#modalCart" class="flow-text modal-trigger" ng-click="btnCartClick()">Cart:{{cart.TotalPrice | currency}} ({{cart.Num}} items) <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:18px;"></i></a>
+                        <a class="empty-cart" href="">Empty Cart</a>
+                    </div>
+                    <div class="header-top-right" ng-controller="LoginController as vm">
+                        <div>
+                            <a href="">VNĐ</a>
+                        </div>
+                        <div class="mid">
+                            <a href="#loginModal" class="modal-trigger"><i class="fa fa-user" aria-hidden="true"></i> {{vm.displayName}}</a>
+                        </div>
+                        <div>
+                            <a href="" ng-show="vm.isLogin" ng-click="vm.logout()">Log out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="logo">
+                        <a href="#/">
+                            <h1 class="text"><b style="color:#F9D9BE">B</b>OLYBI</h1>
+                        </a>
+                    </div>
+                    <div class="header-bot-right" ng-controller="CategoryController as vm">
+                        <div class="show-form">
+                            <a class="show-men" href="#/product" ng-click="vm.applyData('Men')">MENS</a>
+                            <div class="form-hover">
+                                <ul>
+                                    <li class="li-hd">MEN</li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Running')">Running</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Casual')">Casual</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Gym')">Gym</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Basketball')">Basketball</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Soccer')">Soccer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="show-form">
+                            <a class="show-women" href="#/product" ng-click="vm.applyData('Women')">WOMENS</a>
+                            <div class="form-hover">
+                                <ul>
+                                    <li class="li-hd">WOMEN</li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Running')">Running</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Casual')">Casual</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Gym')">Gym</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Basketball')">Basketball</a></li>
+                                    <li><a href="#/product" ng-click="vm.applyData('Soccer')">Soccer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="show-form">
+                            <a class="show-acessories" href="">ACESSORIES</a>
+                            <div class="form-hover">
+                                <ul>
+                                    <li class="li-hd">ACESORIES</li>
+                                    <li><a>Running</a></li>
+                                    <li><a>Casual</a></li>
+                                    <li><a>Gym</a></li>
+                                    <li><a>Basketball</a></li>
+                                    <li><a>Soccer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="show-form">
+                            <a href="" class="sale">SALE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Content-->
+    <div class="main">
+        <div ng-view></div>
+    </div>
+
+    <!--Footer-->
+    <div class="Footer">
+        <div class="container">
+            <div class="Newsletter">
+                <h3>Newsletter</h3>
+                <div class="SubGroup">
+                    <input type="text" class="tbSub">
+                    <input type="submit" class="btSub" value="Subscribe">
+                </div>
+            </div>
+            <div class="Footer-bot">
+                <div class="Footer-menu">
+                    <ul>
+                        <li>
+                            <a href="">PRIVACY</a>
+                        </li>
+                        <li>
+                            <a href="">TERMS</a>
+                        </li>
+                        <li>
+                            <a href="">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="#/about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2015 Watches. All Rights Reserved | Design by <a href="http://team-vant.tk">NVT</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Login Modal-->
+    <div id="loginModal" class="modal white-text" ng-controller="LoginController as vm">
+        <div class="modal-content blue-grey darken-1">
+            <h4>BOLYBI</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row container" ng-show="!vm.isLogin">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" ng-model="vm.username" type="email" class="validate">
+                            <label for="icon_prefix">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">https</i>
+                            <input id="icon_password" ng-model="vm.password" type="password" class="validate">
+                            <label for="icon_password">Password</label>
+                        </div>
+                        <div class="login" ng-show="vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat modal-action modal-close" ng-click="vm.login()">Log in</a>
+                        </div>
+                        <div class="forgot" ng-show="vm.create">
+                            <a href="" class="col s12">
+                                <p>Forgot your login details?</p> Get help singing in.
+                            </a>
+                        </div>
+                        <div class="col s12 or" ng-show="vm.create">
+                            <hr>
+                            <div>OR</div>
+                        </div>
+                        <div class="login" ng-show="vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat modal-action modal-close" ng-click="vm.loginWithFacebook()">LOG IN WITH FACEBOOK</a>
+                        </div>
+                        <div class="none" ng-show="vm.create"></div>
+                        <div class="login" ng-show="vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat modal-action modal-close" ng-click="vm.loginWithGoogle()">LOG IN WITH GOOGLE+</a>
+                        </div>
+                        <div class="col s12 dont" ng-show="vm.create">
+                            <hr>
+                            <div>Don't have an account?</div>
+                        </div>
+                        <div class="login" ng-show="vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat" ng-click="vm.setFalse()">CREATE AN ACCOUNT?</a>
+                        </div>
+
+                        <div class="login" ng-show="!vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat modal-action modal-close" ng-click="vm.signUp()">CREATE NEW ACCOUNT</a>
+                        </div>
+                        <div class="login" style="margin-top: 400px !important;" ng-show="!vm.create">
+                            <a href="" class="col s12 waves-effect waves-light btn-flat" ng-click="vm.setTrue()">BACK</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modals -->
+    <div id="modalCart" class="modal modal-fixed-footer" ng-controller="LoginController as vm">
+        <div class="modal-content">
+            <h1 ng-show="vm.showCart==1">Cart</h1>
+
+            <h1 ng-show="vm.showCart==0">Please Login First to use Cart</h1>
+            <table class="highlight responsive-table" ng-show="vm.showCart==1">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Item Size</th>
+                        <th>Quantity</th>
+                        <th>Price per Item</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in cart.Items">
+                        <td><img ng-src="{{item.Img}}" style="width: 120px; height: 120px"></td>
+                        <td>{{item.ID}}</td>
+                        <td>{{item.Name}}</td>
+                        <td>{{item.Size}}</td>
+                        <td>{{item.Qtt}}</td>
+                        <td>{{item.Price | currency}}</td>
+                        <td><a class="waves-effect waves-dark red-text" ng-click="btnRemoveClick($index)" style="padding:5px 20px;">Remove</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="6">Total:</th>
+                        <th>{{cart.TotalPrice | currency}}</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <h1 ng-show="vm.showCart==2">Fill Orders Infomations</h1>
+            <form class="col s12" ng-show="vm.showCart==2">
+                <div class="row">
+                    <div class="input-field col s5">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate" ng-model="newOrder.Customer">
+                        <label for="icon_prefix">Name</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate" ng-model="newOrder.Tel">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s11">
+                        <i class="material-icons prefix">room</i>
+                        <textarea id="textarea1" class="materialize-textarea" ng-model="newOrder.Address"></textarea>
+                        <label for="textarea1">Address</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-green btn-flat" style="padding:0px 30px;">Close</a>
+            <a class="waves-effect waves-light btn" ng-click="vm.btnOrderClick()" style="padding:5px 30px;" ng-show="vm.showCart == 1">Order</a>
+            <a class="waves-effect waves-light btn btn-red teal lighten-1" ng-click="btnSubmitClick()" style="padding:5px 30px;" ng-show="vm.showCart == 2">Submit</a>
+            <a class="waves-effect waves-light btn btn-red teal lighten-1" ng-click="vm.showCart=1" style="padding:5px 30px;" ng-show="vm.showCart == 2">Back</a>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+        });
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+    </script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAUkGzSslnUVmHkmH1Lb9KOVy4EfU5TCKI",
+            authDomain: "web-final-cb2b3.firebaseapp.com",
+            databaseURL: "https://web-final-cb2b3.firebaseio.com",
+            storageBucket: "web-final-cb2b3.appspot.com",
+        };
+        firebase.initializeApp(config);
+    </script>
+</body>
+
+</html>
